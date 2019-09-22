@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Controller Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_Microchip_ATmega:ATmega328-PU U1
-U 1 1 5D83C31C
-P 5950 3950
-F 0 "U1" H 5306 3996 50  0000 R CNN
-F 1 "ATmega328-PU" H 5306 3905 50  0000 R CNN
-F 2 "Package_DIP:DIP-28_W7.62mm" H 5950 3950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5950 3950 50  0001 C CNN
-	1    5950 3950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Battery_Cell 9V_Battery1
 U 1 1 5D84057C
@@ -100,43 +88,18 @@ Wire Wire Line
 Connection ~ 2050 1600
 Text GLabel 2250 1600 2    50   Output ~ 0
 3208_PWR
-Text GLabel 5950 2400 1    50   Input ~ 0
-3208_PWR
-Wire Wire Line
-	5950 2450 5950 2400
-Text GLabel 6050 2400 1    50   Input ~ 0
-3208_PWR
-Wire Wire Line
-	6050 2450 6050 2400
-$Comp
-L Device:R R1
-U 1 1 5D85483D
-P 6800 4250
-F 0 "R1" V 6593 4250 50  0000 C CNN
-F 1 "10k" V 6684 4250 50  0000 C CNN
-F 2 "" V 6730 4250 50  0001 C CNN
-F 3 "~" H 6800 4250 50  0001 C CNN
-	1    6800 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6650 4250 6550 4250
-Wire Wire Line
-	6950 4250 7050 4250
-Text GLabel 7050 4250 2    50   Input ~ 0
-3208_PWR
-Wire Wire Line
-	2150 1600 2250 1600
 Connection ~ 2150 1600
 $Comp
-L Display_Character:LCD-016N002L U?
-U 1 1 5D868192
-P 7600 1250
-F 0 "U?" V 7646 406 50  0000 R CNN
-F 1 "LCD-016N002L" V 7555 406 50  0000 R CNN
-F 2 "Display:LCD-016N002L" H 7620 330 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/37299/37299.pdf" H 8100 950 50  0001 C CNN
-	1    7600 1250
-	0    -1   -1   0   
+L MRDT_Controler_Board:ESP8266_NodeMCU ESP-12E
+U 1 1 5D86DCF0
+P 3850 900
+F 0 "ESP-12E" H 3850 1025 50  0000 C CNN
+F 1 "ESP8266_NodeMCU" H 3850 934 50  0000 C CNN
+F 2 "" H 3850 900 50  0001 C CNN
+F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20Datasheet.pdf" H 3850 900 50  0001 C CNN
+	1    3850 900 
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2150 1600 2250 1600
 $EndSCHEMATC

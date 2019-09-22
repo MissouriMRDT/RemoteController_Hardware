@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Controller Board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -89,7 +88,18 @@ Wire Wire Line
 Connection ~ 2050 1600
 Text GLabel 2250 1600 2    50   Output ~ 0
 3208_PWR
+Connection ~ 2150 1600
+$Comp
+L MRDT_Controler_Board:ESP8266_NodeMCU ESP-12E1
+U 1 1 5D86DCF0
+P 3850 900
+F 0 "ESP-12E1" H 3850 1025 50  0000 C CNN
+F 1 "ESP8266_NodeMCU" H 3850 934 50  0000 C CNN
+F 2 "MRDT_Controller_Board:ESP8266_nodeMCU" H 3850 900 50  0001 C CNN
+F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20Datasheet.pdf" H 3850 900 50  0001 C CNN
+	1    3850 900 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2150 1600 2250 1600
-Connection ~ 2150 1600
 $EndSCHEMATC
