@@ -98,7 +98,7 @@ Wire Notes Line
 	2500 2000 500  2000
 Wire Notes Line
 	500  2000 500  500 
-Text Notes 500  2000 0    50   ~ 0
+Text Notes 500  2000 0    59   ~ 12
 Power Supply\n
 $Comp
 L power:GND #PWR?
@@ -404,7 +404,7 @@ Wire Notes Line
 	2500 500  2500 2550
 Wire Notes Line
 	6850 500  6850 2550
-Text Notes 2510 2540 0    50   ~ 0
+Text Notes 2510 2540 0    59   ~ 12
 I2C_16X2_LCD
 $Comp
 L power:+5V #PWR?
@@ -416,5 +416,42 @@ F 2 "" H 2050 1450 50  0001 C CNN
 F 3 "" H 2050 1450 50  0001 C CNN
 	1    2050 1450
 	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9432CF
+P 5300 4950
+F 0 "#PWR?" H 5300 4800 50  0001 C CNN
+F 1 "+5V" H 5315 5115 39  0000 C CNN
+F 2 "" H 5300 4950 50  0001 C CNN
+F 3 "" H 5300 4950 50  0001 C CNN
+	1    5300 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D943E61
+P 5150 4950
+F 0 "#PWR?" H 5150 4700 50  0001 C CNN
+F 1 "GND" H 5155 4785 39  0000 C CNN
+F 2 "" H 5150 4950 50  0001 C CNN
+F 3 "" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4680 1380
+NoConn ~ 4680 1480
+NoConn ~ 4680 1580
+NoConn ~ 4680 1680
+$Comp
+L MRDT_Controler_Board:2_Axis_Joystick U?
+U 1 1 5D94A1A4
+P 8110 1390
+F 0 "U?" H 8338 1116 50  0000 L CNN
+F 1 "2_Axis_Joystick" H 8338 1025 50  0000 L CNN
+F 2 "" H 8110 1390 50  0001 C CNN
+F 3 "" H 8110 1390 50  0001 C CNN
+	1    8110 1390
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
