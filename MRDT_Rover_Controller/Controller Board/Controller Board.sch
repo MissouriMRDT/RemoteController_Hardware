@@ -58,17 +58,6 @@ F 3 "~" H 1700 1450 50  0001 C CNN
 	1    1700 1450
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+5V #PWR0102
-U 1 1 5D84B7B3
-P 1950 1500
-F 0 "#PWR0102" H 1950 1350 50  0001 C CNN
-F 1 "+5V" H 1965 1673 50  0000 C CNN
-F 2 "" H 1950 1500 50  0001 C CNN
-F 3 "" H 1950 1500 50  0001 C CNN
-	1    1950 1500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1150 1150 1150 900 
 Wire Wire Line
@@ -82,14 +71,9 @@ Wire Wire Line
 	1550 1450 1550 1200
 Wire Wire Line
 	1850 900  1850 1450
-Wire Wire Line
-	1850 1450 1950 1450
-Wire Wire Line
-	1950 1450 1950 1500
 Connection ~ 1850 1450
 Text GLabel 2050 1450 2    50   Output ~ 0
-3208_PWR
-Connection ~ 1950 1450
+5V_PWR
 $Comp
 L MRDT_Controler_Board:ESP8266_NodeMCU ESP-12E1
 U 1 1 5D86DCF0
@@ -101,28 +85,15 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20
 	1    5450 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 1450 2050 1450
-$Comp
-L Interface_Expansion:PCF8574 I2C_to_LCD
-U 1 1 5D8EA9E2
-P 5200 1450
-F 0 "I2C_to_LCD" H 5200 2331 50  0000 C CNN
-F 1 "PCF8574" H 5200 2240 50  0000 C CNN
-F 2 "" H 5200 1450 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 5200 1450 50  0001 C CNN
-	1    5200 1450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Display_Character:RC1602A 16x2_LCD
 U 1 1 5D8EDD80
-P 6800 1450
-F 0 "16x2_LCD" H 6800 2331 50  0000 C CNN
-F 1 "RC1602A" H 6800 2240 50  0000 C CNN
-F 2 "Display:RC1602A" H 6900 650 50  0001 C CNN
-F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 6900 1350 50  0001 C CNN
-	1    6800 1450
+P 10250 1590
+F 0 "16x2_LCD" H 10250 2471 50  0000 C CNN
+F 1 "RC1602A" H 10250 2380 50  0000 C CNN
+F 2 "Display:RC1602A" H 10350 790 50  0001 C CNN
+F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 10350 1490 50  0001 C CNN
+	1    10250 1590
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -135,4 +106,103 @@ Wire Notes Line
 	500  500  2500 500 
 Text Notes 500  2000 0    50   ~ 0
 Power Supply\n
+Text GLabel 8730 830  0    50   Input ~ 0
+5V_PWR
+Text GLabel 10650 1890 2    50   Input ~ 0
+5V_PWR
+$Comp
+L power:GND #PWR?
+U 1 1 5D912FAB
+P 8930 2330
+F 0 "#PWR?" H 8930 2080 50  0001 C CNN
+F 1 "GND" H 8935 2157 50  0000 C CNN
+F 2 "" H 8930 2330 50  0001 C CNN
+F 3 "" H 8930 2330 50  0001 C CNN
+	1    8930 2330
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1450 2050 1450
+Wire Wire Line
+	8930 930  8930 830 
+Wire Wire Line
+	8730 830  8930 830 
+$Comp
+L power:GND #PWR?
+U 1 1 5D918DEA
+P 8200 1890
+F 0 "#PWR?" H 8200 1640 50  0001 C CNN
+F 1 "GND" H 8205 1717 50  0000 C CNN
+F 2 "" H 8200 1890 50  0001 C CNN
+F 3 "" H 8200 1890 50  0001 C CNN
+	1    8200 1890
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1530 8200 1630
+$Comp
+L Interface_Expansion:PCF8574 I2C_to_LCD
+U 1 1 5D8EA9E2
+P 8930 1630
+F 0 "I2C_to_LCD" H 9200 2430 50  0000 C CNN
+F 1 "PCF8574" H 9240 2360 50  0000 C CNN
+F 2 "" H 8930 1630 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 8930 1630 50  0001 C CNN
+	1    8930 1630
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8430 1530 8200 1530
+Wire Wire Line
+	8430 1630 8200 1630
+Connection ~ 8200 1630
+Wire Wire Line
+	8200 1630 8200 1730
+Wire Wire Line
+	8430 1730 8200 1730
+Connection ~ 8200 1730
+Wire Wire Line
+	8200 1730 8200 1890
+Wire Wire Line
+	9430 1630 9680 1630
+Wire Wire Line
+	9680 1630 9680 1790
+Wire Wire Line
+	9680 1790 9850 1790
+Wire Wire Line
+	9640 1730 9640 1890
+Wire Wire Line
+	9640 1890 9850 1890
+Wire Wire Line
+	9640 1730 9430 1730
+Wire Wire Line
+	9430 1830 9600 1830
+Wire Wire Line
+	9600 1830 9600 1990
+Wire Wire Line
+	9600 1990 9850 1990
+Wire Wire Line
+	9430 1930 9560 1930
+Wire Wire Line
+	9560 1930 9560 2090
+Wire Wire Line
+	9560 2090 9850 2090
+Wire Wire Line
+	9430 1230 9600 1230
+Wire Wire Line
+	9600 1230 9600 1090
+Wire Wire Line
+	9600 1090 9850 1090
+Wire Wire Line
+	9430 1330 9650 1330
+Wire Wire Line
+	9650 1330 9650 1190
+Wire Wire Line
+	9650 1190 9850 1190
+Wire Wire Line
+	9430 1430 9700 1430
+Wire Wire Line
+	9700 1430 9700 1290
+Wire Wire Line
+	9700 1290 9850 1290
 $EndSCHEMATC
