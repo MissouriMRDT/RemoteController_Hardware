@@ -106,10 +106,6 @@ Wire Notes Line
 	500  500  2500 500 
 Text Notes 500  2000 0    50   ~ 0
 Power Supply\n
-Text GLabel 7820 840  0    50   Output ~ 0
-5V_PWR
-Text GLabel 9740 1900 2    50   Input ~ 0
-5V_PWR
 $Comp
 L power:GND #PWR?
 U 1 1 5D912FAB
@@ -123,10 +119,6 @@ F 3 "" H 8020 2340 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 1450 2050 1450
-Wire Wire Line
-	8020 940  8020 840 
-Wire Wire Line
-	7820 840  8020 840 
 $Comp
 L power:GND #PWR?
 U 1 1 5D918DEA
@@ -229,8 +221,6 @@ F 3 "~" H 10350 1660 50  0001 C CNN
 	1    10350 1660
 	1    0    0    -1  
 $EndComp
-Text GLabel 10350 1370 1    50   Input ~ 0
-5V_PWR
 Wire Wire Line
 	10350 1370 10350 1510
 Wire Wire Line
@@ -267,4 +257,144 @@ Wire Wire Line
 	9740 1800 9850 1800
 Wire Wire Line
 	8520 1540 8660 1540
+$Comp
+L Device:R R3
+U 1 1 5D8FC35A
+P 7430 860
+F 0 "R3" H 7480 940 50  0000 L CNN
+F 1 "4.7K" H 7480 870 50  0000 L CNN
+F 2 "" V 7360 860 50  0001 C CNN
+F 3 "~" H 7430 860 50  0001 C CNN
+	1    7430 860 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D8FCB98
+P 7330 910
+F 0 "R2" H 7130 900 50  0000 L CNN
+F 1 "4.7K" H 7120 830 50  0000 L CNN
+F 2 "" V 7260 910 50  0001 C CNN
+F 3 "~" H 7330 910 50  0001 C CNN
+	1    7330 910 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 650  7330 650 
+Wire Wire Line
+	7430 710  7430 650 
+Connection ~ 7430 650 
+Wire Wire Line
+	7330 760  7330 650 
+Connection ~ 7330 650 
+Wire Wire Line
+	7330 650  7430 650 
+Wire Wire Line
+	8020 650  8020 940 
+Wire Wire Line
+	7430 650  8020 650 
+Wire Wire Line
+	7230 1240 7430 1240
+Wire Wire Line
+	7230 1340 7330 1340
+Wire Wire Line
+	7330 1060 7330 1340
+Connection ~ 7330 1340
+Wire Wire Line
+	7330 1340 7520 1340
+Wire Wire Line
+	7430 1010 7430 1240
+Connection ~ 7430 1240
+Wire Wire Line
+	7430 1240 7520 1240
+Text Label 7230 1240 2    50   ~ 0
+SCL
+Text Label 7230 1340 2    50   ~ 0
+SDA
+Text Label 6320 3050 0    50   ~ 0
+SCL
+Text Label 6320 3200 0    50   ~ 0
+SDA
+Wire Wire Line
+	6320 3050 6200 3050
+Wire Wire Line
+	6200 3200 6320 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 5D90DC34
+P 7200 650
+F 0 "#PWR?" H 7200 500 50  0001 C CNN
+F 1 "+5V" V 7215 778 50  0000 L CNN
+F 2 "" H 7200 650 50  0001 C CNN
+F 3 "" H 7200 650 50  0001 C CNN
+	1    7200 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D90F2FA
+P 9820 1900
+F 0 "#PWR?" H 9820 1750 50  0001 C CNN
+F 1 "+5V" V 9835 2028 50  0000 L CNN
+F 2 "" H 9820 1900 50  0001 C CNN
+F 3 "" H 9820 1900 50  0001 C CNN
+	1    9820 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9820 1900 9740 1900
+$Comp
+L power:+5V #PWR?
+U 1 1 5D912A2A
+P 10350 1370
+F 0 "#PWR?" H 10350 1220 50  0001 C CNN
+F 1 "+5V" H 10365 1543 50  0000 C CNN
+F 2 "" H 10350 1370 50  0001 C CNN
+F 3 "" H 10350 1370 50  0001 C CNN
+	1    10350 1370
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5D913915
+P 9970 1150
+F 0 "RV1" H 9901 1196 50  0000 R CNN
+F 1 "R_POT" H 9901 1105 50  0000 R CNN
+F 2 "" H 9970 1150 50  0001 C CNN
+F 3 "~" H 9970 1150 50  0001 C CNN
+	1    9970 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9970 1300 9970 1400
+Wire Wire Line
+	9970 1400 9740 1400
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9176C5
+P 9970 890
+F 0 "#PWR?" H 9970 740 50  0001 C CNN
+F 1 "+5V" H 9985 1063 50  0000 C CNN
+F 2 "" H 9970 890 50  0001 C CNN
+F 3 "" H 9970 890 50  0001 C CNN
+	1    9970 890 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9970 890  9970 1000
+$Comp
+L power:GND #PWR?
+U 1 1 5D9192DD
+P 10170 1190
+F 0 "#PWR?" H 10170 940 50  0001 C CNN
+F 1 "GND" H 10175 1017 50  0000 C CNN
+F 2 "" H 10170 1190 50  0001 C CNN
+F 3 "" H 10170 1190 50  0001 C CNN
+	1    10170 1190
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10170 1190 10170 1150
+Wire Wire Line
+	10170 1150 10120 1150
 $EndSCHEMATC
