@@ -102,31 +102,4 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20
 $EndComp
 Wire Wire Line
 	2150 1600 2250 1600
-$Comp
-L MRDT_Controler_Board:ESP8266_NodeMCU U1
-U 1 1 5D873C7F
-P 3900 2250
-F 0 "U1" H 3900 2375 50  0000 C CNN
-F 1 "ESP8266_NodeMCU" H 3900 2284 50  0000 C CNN
-F 2 "MRDT_Controller_Board:ESP8266_nodeMCU" H 3900 2250 50  0001 C CNN
-F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20Datasheet.pdf" H 3900 2250 50  0001 C CNN
-	1    3900 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 2350 3550 2050
-Wire Wire Line
-	3550 2050 3350 2050
-Wire Wire Line
-	3350 2050 3350 1000
-Wire Wire Line
-	3350 1000 3500 1000
-Wire Wire Line
-	4200 1000 4950 1000
-Wire Wire Line
-	4950 1000 4950 2300
-Wire Wire Line
-	4950 2300 4250 2300
-Wire Wire Line
-	4250 2300 4250 2350
 $EndSCHEMATC
