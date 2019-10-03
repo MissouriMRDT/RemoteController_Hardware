@@ -301,10 +301,6 @@ Wire Wire Line
 Connection ~ 3170 1220
 Wire Wire Line
 	3170 1220 3260 1220
-Text Label 2970 1220 2    50   ~ 0
-SCL
-Text Label 2970 1320 2    50   ~ 0
-SDA
 Wire Wire Line
 	6320 3050 6200 3050
 Wire Wire Line
@@ -368,10 +364,6 @@ F 3 "" H 5080 2280 50  0001 C CNN
 	1    5080 2280
 	1    0    0    -1  
 $EndComp
-Text Label 6320 3200 0    50   ~ 0
-SDA
-Text Label 6320 3050 0    50   ~ 0
-SCL
 $Comp
 L power:GND #PWR0110
 U 1 1 5D9192DD
@@ -444,65 +436,147 @@ NoConn ~ 4680 1480
 NoConn ~ 4680 1580
 NoConn ~ 4680 1680
 $Comp
-L JOYSTICK:JOYSTICK Velocity
+L JOYSTICK:JOYSTICK Left_Joystick
 U 1 1 5D94E007
-P 7740 1190
-F 0 "Velocity" H 7430 1800 50  0000 L CNN
-F 1 "2-Axis Joystick" H 7430 1730 50  0000 L CNN
-F 2 "JOYSTICK" H 7740 1190 50  0001 L BNN
-F 3 "" H 7740 1190 50  0001 C CNN
-	1    7740 1190
+P 7910 1210
+F 0 "Left_Joystick" H 7600 1820 50  0000 L CNN
+F 1 "2-Axis Joystick" H 7600 1750 50  0000 L CNN
+F 2 "JOYSTICK" H 7910 1210 50  0001 L BNN
+F 3 "" H 7910 1210 50  0001 C CNN
+	1    7910 1210
 	1    0    0    -1  
 $EndComp
 $Comp
-L JOYSTICK:JOYSTICK Directional
+L JOYSTICK:JOYSTICK Right_Joystick
 U 1 1 5D954480
-P 8900 1190
-F 0 "Directional" H 8600 1800 50  0000 L CNN
-F 1 "2-Axis Joystick" H 8600 1730 50  0000 L CNN
-F 2 "JOYSTICK" H 8900 1190 50  0001 L BNN
-F 3 "" H 8900 1190 50  0001 C CNN
-	1    8900 1190
+P 9230 1220
+F 0 "Right_Joystick" H 8930 1830 50  0000 L CNN
+F 1 "2-Axis Joystick" H 8930 1760 50  0000 L CNN
+F 2 "JOYSTICK" H 9230 1220 50  0001 L BNN
+F 3 "" H 9230 1220 50  0001 C CNN
+	1    9230 1220
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5D95701B
-P 7230 720
-F 0 "#PWR?" H 7230 570 50  0001 C CNN
-F 1 "+5V" H 7245 893 50  0000 C CNN
-F 2 "" H 7230 720 50  0001 C CNN
-F 3 "" H 7230 720 50  0001 C CNN
-	1    7230 720 
+P 7400 740
+F 0 "#PWR?" H 7400 590 50  0001 C CNN
+F 1 "+5V" H 7415 913 50  0000 C CNN
+F 2 "" H 7400 740 50  0001 C CNN
+F 3 "" H 7400 740 50  0001 C CNN
+	1    7400 740 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5D9578E5
-P 8390 700
-F 0 "#PWR?" H 8390 550 50  0001 C CNN
-F 1 "+5V" H 8405 873 50  0000 C CNN
-F 2 "" H 8390 700 50  0001 C CNN
-F 3 "" H 8390 700 50  0001 C CNN
-	1    8390 700 
+P 8720 730
+F 0 "#PWR?" H 8720 580 50  0001 C CNN
+F 1 "+5V" H 8735 903 50  0000 C CNN
+F 2 "" H 8720 730 50  0001 C CNN
+F 3 "" H 8720 730 50  0001 C CNN
+	1    8720 730 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8390 700  8390 790 
+	8720 730  8720 820 
 Wire Wire Line
-	8390 790  8500 790 
+	8720 820  8830 820 
 Wire Wire Line
-	8500 1190 8390 1190
+	8830 1220 8720 1220
 Wire Wire Line
-	8390 1190 8390 790 
-Connection ~ 8390 790 
+	8720 1220 8720 820 
+Connection ~ 8720 820 
 Wire Wire Line
-	7340 790  7230 790 
+	7510 810  7400 810 
 Wire Wire Line
-	7230 790  7230 720 
+	7400 810  7400 740 
 Wire Wire Line
-	7340 1190 7230 1190
+	7510 1210 7400 1210
 Wire Wire Line
-	7230 1190 7230 790 
-Connection ~ 7230 790 
+	7400 1210 7400 810 
+Connection ~ 7400 810 
+$Comp
+L power:GND #PWR?
+U 1 1 5D964091
+P 8790 2040
+F 0 "#PWR?" H 8790 1790 50  0001 C CNN
+F 1 "GND" H 8795 1867 50  0000 C CNN
+F 2 "" H 8790 2040 50  0001 C CNN
+F 3 "" H 8790 2040 50  0001 C CNN
+	1    8790 2040
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D965019
+P 7460 1940
+F 0 "#PWR?" H 7460 1690 50  0001 C CNN
+F 1 "GND" H 7465 1767 50  0000 C CNN
+F 2 "" H 7460 1940 50  0001 C CNN
+F 3 "" H 7460 1940 50  0001 C CNN
+	1    7460 1940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8830 1020 8790 1020
+Wire Wire Line
+	8790 1020 8790 1420
+Wire Wire Line
+	8830 1720 8790 1720
+Connection ~ 8790 1720
+Wire Wire Line
+	8790 1720 8790 2040
+Wire Wire Line
+	7510 1010 7460 1010
+Wire Wire Line
+	7510 1710 7460 1710
+Wire Wire Line
+	7460 1010 7460 1410
+Connection ~ 7460 1710
+Wire Wire Line
+	7460 1710 7460 1940
+Wire Wire Line
+	7510 1410 7460 1410
+Connection ~ 7460 1410
+Wire Wire Line
+	7460 1410 7460 1710
+Wire Wire Line
+	8830 1420 8790 1420
+Connection ~ 8790 1420
+Wire Wire Line
+	8790 1420 8790 1720
+Text GLabel 2970 1220 0    50   BiDi ~ 0
+SCL
+Text GLabel 2970 1320 0    50   BiDi ~ 0
+SDA
+Text GLabel 6320 3050 2    50   BiDi ~ 0
+SCL
+Text GLabel 6320 3200 2    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	7510 910  7330 910 
+Wire Wire Line
+	7510 1310 7340 1310
+Wire Wire Line
+	7510 1610 7340 1610
+Wire Wire Line
+	8830 920  8650 920 
+Wire Wire Line
+	8830 1320 8660 1320
+Wire Wire Line
+	8830 1620 8660 1620
+Text GLabel 7330 910  0    50   BiDi ~ 0
+LeftVert
+Text GLabel 7340 1310 0    50   BiDi ~ 0
+LeftHorz
+Text GLabel 7340 1610 0    50   BiDi ~ 0
+LeftSelect
+Text GLabel 8650 920  0    50   BiDi ~ 0
+RightVert
+Text GLabel 8660 1320 0    50   BiDi ~ 0
+RightHorz
+Text GLabel 8660 1620 0    50   BiDi ~ 0
+RightSelect
 $EndSCHEMATC
