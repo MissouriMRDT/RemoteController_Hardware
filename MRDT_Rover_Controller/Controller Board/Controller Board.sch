@@ -575,101 +575,6 @@ Text GLabel 8660 1580 0    50   BiDi ~ 0
 RightHorz
 Text GLabel 8660 1880 0    50   BiDi ~ 0
 RightSelect
-Text GLabel 6330 3350 2    50   BiDi ~ 0
-LeftSelect
-Text GLabel 6330 3500 2    50   BiDi ~ 0
-RightSelect
-Wire Wire Line
-	6330 3350 6200 3350
-Wire Wire Line
-	6330 3500 6200 3500
-$Comp
-L 4xxx:4051 U?
-U 1 1 5D996AFC
-P 10020 1660
-F 0 "U?" H 9740 910 50  0000 L CNN
-F 1 "4051" H 9710 830 50  0000 L CNN
-F 2 "" H 10020 1660 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 10020 1660 50  0001 C CNN
-	1    10020 1660
-	-1   0    0    1   
-$EndComp
-Text GLabel 10610 2260 2    50   BiDi ~ 0
-LeftVert
-Text GLabel 10600 2160 2    50   BiDi ~ 0
-LeftHorz
-Text GLabel 10610 2060 2    50   BiDi ~ 0
-RightVert
-Text GLabel 10600 1960 2    50   BiDi ~ 0
-RightHorz
-Wire Wire Line
-	10610 2260 10520 2260
-Wire Wire Line
-	10600 2160 10520 2160
-Wire Wire Line
-	10610 2060 10520 2060
-Wire Wire Line
-	10600 1960 10520 1960
-$Comp
-L power:GND #PWR?
-U 1 1 5D9ADD8E
-P 10120 700
-F 0 "#PWR?" H 10120 450 50  0001 C CNN
-F 1 "GND" V 10125 572 50  0000 R CNN
-F 2 "" H 10120 700 50  0001 C CNN
-F 3 "" H 10120 700 50  0001 C CNN
-	1    10120 700 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D9AE710
-P 10720 1430
-F 0 "#PWR?" H 10720 1180 50  0001 C CNN
-F 1 "GND" H 10725 1257 50  0000 C CNN
-F 2 "" H 10720 1430 50  0001 C CNN
-F 3 "" H 10720 1430 50  0001 C CNN
-	1    10720 1430
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10720 1430 10720 1360
-Wire Wire Line
-	10720 1360 10520 1360
-Wire Wire Line
-	10020 760  10020 700 
-Wire Wire Line
-	10020 700  10120 700 
-Wire Wire Line
-	9920 760  9920 700 
-Wire Wire Line
-	9920 700  10020 700 
-Connection ~ 10020 700 
-NoConn ~ 10520 1560
-NoConn ~ 10520 1660
-NoConn ~ 10520 1760
-NoConn ~ 10520 1860
-$Comp
-L power:+5V #PWR?
-U 1 1 5D9BEFE1
-P 10140 2650
-F 0 "#PWR?" H 10140 2500 50  0001 C CNN
-F 1 "+5V" V 10155 2778 50  0000 L CNN
-F 2 "" H 10140 2650 50  0001 C CNN
-F 3 "" H 10140 2650 50  0001 C CNN
-	1    10140 2650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10140 2650 10020 2650
-Wire Wire Line
-	10020 2650 10020 2560
-Text GLabel 9520 2260 0    50   BiDi ~ 0
-Joy_MTPLX
-Text GLabel 4600 2900 0    50   BiDi ~ 0
-Joy_MTPLX
-Wire Wire Line
-	4700 2900 4600 2900
 Wire Notes Line
 	6850 2750 11200 2750
 Wire Notes Line
@@ -679,23 +584,116 @@ Wire Notes Line
 Wire Notes Line
 	6850 500  6850 2750
 Text Notes 6870 2730 0    59   ~ 12
-Joysticks w/ Multiplexer
-Text GLabel 10590 1260 2    50   BiDi ~ 0
-A_MTPLX
-Text GLabel 10590 1160 2    50   BiDi ~ 0
-B_MTPLX
-Text GLabel 10590 1060 2    50   BiDi ~ 0
-C_MTPLX
-Text GLabel 6330 3950 2    50   BiDi ~ 0
-A_MTPLX
-Text GLabel 6330 4100 2    50   BiDi ~ 0
-B_MTPLX
-Text GLabel 6330 4250 2    50   BiDi ~ 0
-C_MTPLX
+Joysticks w/ ADC
 Wire Wire Line
 	6330 3950 6200 3950
 Wire Wire Line
 	6330 4100 6200 4100
 Wire Wire Line
 	6330 4250 6200 4250
+$Comp
+L Analog_ADC:MCP3008 U1
+U 1 1 5D990363
+P 10320 1520
+F 0 "U1" H 10740 2120 50  0000 C CNN
+F 1 "MCP3008" H 10750 2040 50  0000 C CNN
+F 2 "" H 10420 1620 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 10420 1620 50  0001 C CNN
+	1    10320 1520
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10520 840  1    50   BiDi ~ 0
+CS
+Wire Wire Line
+	10520 840  10520 920 
+Text GLabel 6340 4400 2    50   BiDi ~ 0
+CS
+Wire Wire Line
+	6340 4400 6200 4400
+Text GLabel 10420 850  1    50   BiDi ~ 0
+Din
+Text GLabel 6330 4250 2    50   BiDi ~ 0
+Din
+Wire Wire Line
+	10420 850  10420 920 
+Text GLabel 6330 4100 2    50   BiDi ~ 0
+Dout
+Text GLabel 10320 860  1    50   BiDi ~ 0
+Dout
+Wire Wire Line
+	10320 860  10320 920 
+Text GLabel 10220 860  1    50   BiDi ~ 0
+CLK
+Wire Wire Line
+	10220 860  10220 920 
+Text GLabel 6330 3950 2    50   BiDi ~ 0
+CLK
+$Comp
+L power:GND #PWR?
+U 1 1 5D9AADAF
+P 10920 1320
+F 0 "#PWR?" H 10920 1070 50  0001 C CNN
+F 1 "GND" H 10925 1147 50  0000 C CNN
+F 2 "" H 10920 1320 50  0001 C CNN
+F 3 "" H 10920 1320 50  0001 C CNN
+	1    10920 1320
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9ABD54
+P 10920 1620
+F 0 "#PWR?" H 10920 1370 50  0001 C CNN
+F 1 "GND" H 10925 1447 50  0000 C CNN
+F 2 "" H 10920 1620 50  0001 C CNN
+F 3 "" H 10920 1620 50  0001 C CNN
+	1    10920 1620
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9AE70C
+P 9820 1620
+F 0 "#PWR?" H 9820 1470 50  0001 C CNN
+F 1 "+5V" H 9835 1793 50  0000 C CNN
+F 2 "" H 9820 1620 50  0001 C CNN
+F 3 "" H 9820 1620 50  0001 C CNN
+	1    9820 1620
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9AF1F5
+P 9820 1320
+F 0 "#PWR?" H 9820 1170 50  0001 C CNN
+F 1 "+5V" H 9835 1493 50  0000 C CNN
+F 2 "" H 9820 1320 50  0001 C CNN
+F 3 "" H 9820 1320 50  0001 C CNN
+	1    9820 1320
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10020 2190 3    50   BiDi ~ 0
+LeftVert
+Text GLabel 10120 2190 3    50   BiDi ~ 0
+LeftHorz
+Text GLabel 10220 2190 3    50   BiDi ~ 0
+RightVert
+Text GLabel 10320 2190 3    50   BiDi ~ 0
+RightHorz
+Wire Wire Line
+	10020 2120 10020 2190
+Wire Wire Line
+	10120 2120 10120 2190
+Wire Wire Line
+	10220 2120 10220 2190
+Wire Wire Line
+	10320 2120 10320 2190
+Text GLabel 10420 2190 3    50   BiDi ~ 0
+LeftSelect
+Text GLabel 10520 2190 3    50   BiDi ~ 0
+RightSelect
+Wire Wire Line
+	10420 2120 10420 2190
+Wire Wire Line
+	10520 2120 10520 2190
 $EndSCHEMATC
