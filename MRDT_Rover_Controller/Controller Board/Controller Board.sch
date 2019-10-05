@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Rover Controller"
 Date ""
 Rev ""
-Comp ""
+Comp "Mars Rover Design Team"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -579,4 +579,12 @@ Text GLabel 8660 1320 0    50   BiDi ~ 0
 RightHorz
 Text GLabel 8660 1620 0    50   BiDi ~ 0
 RightSelect
+Text GLabel 6330 3350 2    50   BiDi ~ 0
+LeftSelect
+Text GLabel 6330 3500 2    50   BiDi ~ 0
+RightSelect
+Wire Wire Line
+	6330 3350 6200 3350
+Wire Wire Line
+	6330 3500 6200 3500
 $EndSCHEMATC
