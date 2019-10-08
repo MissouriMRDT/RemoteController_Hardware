@@ -1,4 +1,4 @@
-16305740625348240
+16305741218323063
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49630,19 +49630,19 @@ Yellow 5381 Series LED
 2
 2
 MRDT_Controller_Board
-2-Axis_Joystick_Sparkfun
-
-
-0
-0
-0
-MRDT_Controller_Board
 ESP8266_nodeMCU
 
 
 0
 30
 30
+MRDT_Controller_Board
+PCF8574_THT
+
+
+0
+16
+16
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet

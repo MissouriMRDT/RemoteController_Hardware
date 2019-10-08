@@ -31,7 +31,7 @@ U 1 1 5D8418B6
 P 1550 900
 F 0 "5V_Regulator1" H 1550 1142 50  0000 C CNN
 F 1 "L7805" H 1550 1051 50  0000 C CNN
-F 2 "" H 1575 750 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1575 750 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1550 850 50  0001 C CNN
 	1    1550 900 
 	1    0    0    -1  
@@ -132,7 +132,7 @@ U 1 1 5D8EA9E2
 P 3760 1620
 F 0 "I2C_Bus1" H 4030 2420 50  0000 C CNN
 F 1 "PCF8574" H 4070 2350 50  0000 C CNN
-F 2 "" H 3760 1620 50  0001 C CNN
+F 2 "MRDT_Controller_Board:PCF8574_THT" H 3760 1620 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 3760 1620 50  0001 C CNN
 	1    3760 1620
 	1    0    0    -1  
