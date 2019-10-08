@@ -578,8 +578,6 @@ RightSelect
 Wire Notes Line
 	6850 2750 11200 2750
 Wire Notes Line
-	11200 2750 11200 500 
-Wire Notes Line
 	500  500  11200 500 
 Wire Notes Line
 	6850 500  6850 2750
@@ -696,4 +694,56 @@ Wire Wire Line
 	10420 2120 10420 2190
 Wire Wire Line
 	10520 2120 10520 2190
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5D9CD133
+P 10230 3260
+F 0 "JP?" V 10184 3362 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 10275 3362 50  0000 L CNN
+F 2 "" H 10230 3260 50  0001 C CNN
+F 3 "~" H 10230 3260 50  0001 C CNN
+	1    10230 3260
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9D19B1
+P 9870 3260
+F 0 "#PWR?" H 9870 3110 50  0001 C CNN
+F 1 "+5V" V 9885 3388 50  0000 L CNN
+F 2 "" H 9870 3260 50  0001 C CNN
+F 3 "" H 9870 3260 50  0001 C CNN
+	1    9870 3260
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10130 3260 9870 3260
+Wire Wire Line
+	10230 3010 10230 2980
+Wire Wire Line
+	10230 2980 10090 2980
+Wire Wire Line
+	10230 3510 10230 3540
+Wire Wire Line
+	10230 3540 10100 3540
+Text GLabel 10090 2980 0    50   BiDi ~ 0
+TankDrive
+Text GLabel 10100 3540 0    50   BiDi ~ 0
+SafeDrive
+Text GLabel 6330 3350 2    50   BiDi ~ 0
+TankDrive
+Text GLabel 6330 3500 2    50   BiDi ~ 0
+SafeDrive
+Wire Wire Line
+	6330 3350 6200 3350
+Wire Wire Line
+	6330 3500 6200 3500
+Wire Notes Line
+	11200 3720 9460 3720
+Wire Notes Line
+	9460 3720 9460 2750
+Wire Notes Line
+	11200 500  11200 3720
+Text Notes 9470 3700 0    59   ~ 12
+Drive Mode Jumper
 $EndSCHEMATC
