@@ -85,8 +85,6 @@ F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 5180 1480 50  0001 C 
 $EndComp
 Wire Notes Line
 	2500 2000 500  2000
-Wire Notes Line
-	500  2000 500  500 
 Text Notes 500  2000 0    59   ~ 12
 Power Supply\n
 $Comp
@@ -342,8 +340,6 @@ F 3 "" H 5080 2280 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	6850 2550 2500 2550
-Wire Notes Line
-	2500 500  2500 2550
 Text Notes 2510 2540 0    59   ~ 12
 I2C_16X2_LCD
 $Comp
@@ -756,4 +752,108 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20
 	1    5450 2750
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3260 2020
+$Comp
+L Device:R R5
+U 1 1 5D9DA747
+P 1130 2660
+F 0 "R5" H 1200 2706 50  0000 L CNN
+F 1 "100" H 1200 2615 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1060 2660 50  0001 C CNN
+F 3 "~" H 1130 2660 50  0001 C CNN
+	1    1130 2660
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D9DEC63
+P 1930 2670
+F 0 "R6" H 2000 2716 50  0000 L CNN
+F 1 "100" H 2000 2625 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1860 2670 50  0001 C CNN
+F 3 "~" H 1930 2670 50  0001 C CNN
+	1    1930 2670
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 5D9DFBBD
+P 1130 2370
+F 0 "#PWR0123" H 1130 2220 50  0001 C CNN
+F 1 "+5V" H 1145 2543 50  0000 C CNN
+F 2 "" H 1130 2370 50  0001 C CNN
+F 3 "" H 1130 2370 50  0001 C CNN
+	1    1130 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Actives:LED3P LED1
+U 1 1 5D9FE86E
+P 1130 3090
+F 0 "LED1" V 1277 3319 60  0000 L CNN
+F 1 "GREEN" V 1383 3319 60  0000 L CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 1330 3440 60  0001 C CNN
+F 3 "" H 1130 3090 60  0000 C CNN
+	1    1130 3090
+	0    1    1    0   
+$EndComp
+$Comp
+L MRDT_Actives:LED3P LED2
+U 1 1 5DA02666
+P 1930 3080
+F 0 "LED2" V 2077 3308 60  0000 L CNN
+F 1 "BLUE" V 2183 3308 60  0000 L CNN
+F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 2130 3430 60  0001 C CNN
+F 3 "" H 1930 3080 60  0000 C CNN
+	1    1930 3080
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1930 2520 1930 2420
+Wire Wire Line
+	1130 3090 1130 2810
+Wire Wire Line
+	1930 3080 1930 2820
+$Comp
+L power:GND #PWR0124
+U 1 1 5DA1C557
+P 1130 3550
+F 0 "#PWR0124" H 1130 3300 50  0001 C CNN
+F 1 "GND" H 1135 3377 50  0000 C CNN
+F 2 "" H 1130 3550 50  0001 C CNN
+F 3 "" H 1130 3550 50  0001 C CNN
+	1    1130 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5DA1DF2B
+P 1930 3540
+F 0 "#PWR0125" H 1930 3290 50  0001 C CNN
+F 1 "GND" H 1935 3367 50  0000 C CNN
+F 2 "" H 1930 3540 50  0001 C CNN
+F 3 "" H 1930 3540 50  0001 C CNN
+	1    1930 3540
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  500  500  3860
+Wire Notes Line
+	2500 500  2500 3860
+Wire Notes Line
+	500  3860 2500 3860
+Text Notes 510  3850 0    59   ~ 12
+LED Indicators
+Wire Wire Line
+	1130 3550 1130 3490
+Wire Wire Line
+	1930 3540 1930 3480
+Wire Wire Line
+	1130 2370 1130 2510
+Text GLabel 1930 2420 1    50   Input ~ 0
+D0
+Text GLabel 6320 2900 2    50   Output ~ 0
+D0
+Wire Wire Line
+	6320 2900 6200 2900
 $EndSCHEMATC
