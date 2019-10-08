@@ -341,19 +341,6 @@ F 3 "" H 6090 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0108
-U 1 1 5D9176C5
-P 5740 1120
-F 0 "#PWR0108" H 5740 970 50  0001 C CNN
-F 1 "+5V" H 5755 1293 50  0000 C CNN
-F 2 "" H 5740 1120 50  0001 C CNN
-F 3 "" H 5740 1120 50  0001 C CNN
-	1    5740 1120
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5740 1120 5740 1230
-$Comp
 L power:GND #PWR0109
 U 1 1 5D91AF70
 P 5080 2280
@@ -364,30 +351,6 @@ F 3 "" H 5080 2280 50  0001 C CNN
 	1    5080 2280
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5D9192DD
-P 5740 1530
-F 0 "#PWR0110" H 5740 1280 50  0001 C CNN
-F 1 "GND" H 5745 1357 50  0000 C CNN
-F 2 "" H 5740 1530 50  0001 C CNN
-F 3 "" H 5740 1530 50  0001 C CNN
-	1    5740 1530
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 5D913915
-P 5740 1380
-F 0 "RV1" H 5671 1426 50  0000 R CNN
-F 1 "R_POT" H 5671 1335 50  0000 R CNN
-F 2 "" H 5740 1380 50  0001 C CNN
-F 3 "~" H 5740 1380 50  0001 C CNN
-	1    5740 1380
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5590 1380 5480 1380
 Wire Notes Line
 	6850 2550 2500 2550
 Wire Notes Line
@@ -746,4 +709,51 @@ Wire Notes Line
 	11200 500  11200 3720
 Text Notes 9470 3700 0    59   ~ 12
 Drive Mode Jumper
+$Comp
+L Trimmer_POT_3326:3362P-1-103LF R4
+U 1 1 5D9EE8A7
+P 6750 820
+F 0 "R4" H 7150 582 60  0000 C CNN
+F 1 "3362P-1-103F" H 7150 688 60  0000 C CNN
+F 2 "POT_3362P" H 7175 385 60  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/3362.pdf" H 7150 688 60  0001 C CNN
+	1    6750 820 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5D9176C5
+P 5820 820
+F 0 "#PWR0108" H 5820 670 50  0001 C CNN
+F 1 "+5V" H 5835 993 50  0000 C CNN
+F 2 "" H 5820 820 50  0001 C CNN
+F 3 "" H 5820 820 50  0001 C CNN
+	1    5820 820 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 820  5820 820 
+$Comp
+L power:GND #PWR?
+U 1 1 5DA16259
+P 6760 890
+F 0 "#PWR?" H 6760 640 50  0001 C CNN
+F 1 "GND" H 6765 717 50  0000 C CNN
+F 2 "" H 6760 890 50  0001 C CNN
+F 3 "" H 6760 890 50  0001 C CNN
+	1    6760 890 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6760 890  6760 820 
+Wire Wire Line
+	6760 820  6750 820 
+Text GLabel 5520 1380 2    50   BiDi ~ 0
+V0
+Text GLabel 6350 1190 3    50   BiDi ~ 0
+V0
+Wire Wire Line
+	6350 1190 6350 1120
+Wire Wire Line
+	5520 1380 5480 1380
 $EndSCHEMATC
