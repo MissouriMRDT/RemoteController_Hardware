@@ -1,4 +1,4 @@
-16305741811333358
+16307312392720733
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72155,6 +72155,13 @@ transformer flyback
 0
 10
 10
+Trimmer_POT_3326
+3362P-1-103LF
+
+
+0
+3
+3
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
