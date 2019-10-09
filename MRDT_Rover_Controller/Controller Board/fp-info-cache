@@ -1,4 +1,4 @@
-16518150208756944
+16539359177671584
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50071,6 +50071,13 @@ Allegro, Hallsensor, Through hole, Package CB-PFF,
 5
 5
 MRDT_Sensors
+Adafruit_LSM9DS1
+
+
+0
+14
+14
+MRDT_Sensors
 FGPMMOPA6H
 
 
@@ -50120,6 +50127,20 @@ MQ_135_Breakout
 4
 4
 MRDT_Sensors
+Razor_9DOF_Sparkfun
+
+
+0
+12
+12
+MRDT_Sensors
+TCD-1304
+
+
+0
+22
+22
+MRDT_Sensors
 TMP36
 
 
@@ -50133,6 +50154,13 @@ ESP_8266_Breakout_Small
 0
 16
 16
+MRDT_Shields
+ESP_8266_NODEMCU
+
+
+0
+30
+30
 MRDT_Shields
 Full_Booster_Mount
 
@@ -50238,6 +50266,27 @@ RASPBERRY_PI_HEADERS
 0
 40
 40
+MRDT_Shields
+RaspberryPi_THT_BOTTOM
+
+
+0
+40
+40
+MRDT_Shields
+Standard_Mount_Full
+
+
+0
+0
+0
+MRDT_Shields
+Standard_Mount_Half
+
+
+0
+0
+0
 MRDT_Shields
 TM4C123G_Booster
 
@@ -50569,6 +50618,41 @@ zz_Atlas_Logo_Short_Title_110mmX37.4mm
 0
 MRDT_Silkscreens
 zz_Atlas_Logo_Short_Title_140mmX47.6mm
+
+
+0
+0
+0
+MRDT_Silkscreens
+zz_Valkyrie_Logo_Full_40mmx40mm
+
+
+0
+0
+0
+MRDT_Silkscreens
+zz_Valkyrie_Logo_Full_50mmx50mm
+
+
+0
+0
+0
+MRDT_Silkscreens
+zz_Valkyrie_Logo_Full_60mmx60mm
+
+
+0
+0
+0
+MRDT_Silkscreens
+zz_Valkyrie_Logo_Full_70mmx70mm
+
+
+0
+0
+0
+MRDT_Silkscreens
+zz_Valkyrie_Logo_Full_100mmx100mm
 
 
 0
@@ -73107,7 +73191,7 @@ transformer flyback
 0
 10
 10
-Trimmer_POT_3326
+Trimmer_POT_3362
 3362P-1-103LF
 
 

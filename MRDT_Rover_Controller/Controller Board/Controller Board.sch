@@ -15,11 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Battery_Cell BT_9V_1
+L Device:Battery_Cell BT_1
 U 1 1 5D84057C
 P 1150 1350
-F 0 "BT_9V_1" H 650 1450 50  0000 L CNN
-F 1 "Battery_Cell" H 600 1350 50  0000 L CNN
+F 0 "BT_1" H 870 1460 50  0000 L CNN
+F 1 "9V" H 920 1390 50  0000 L CNN
 F 2 "" V 1150 1410 50  0001 C CNN
 F 3 "~" V 1150 1410 50  0001 C CNN
 	1    1150 1350
@@ -695,12 +695,12 @@ Wire Notes Line
 Text Notes 9470 3700 0    59   ~ 12
 Drive Mode Jumper
 $Comp
-L Trimmer_POT_3326:3362P-1-103LF R4
+L Trimmer_POT_3362:3362P-1-103LF R4
 U 1 1 5D9EE8A7
 P 6750 820
 F 0 "R4" H 7150 582 60  0000 C CNN
 F 1 "3362P-1-103F" H 7150 688 60  0000 C CNN
-F 2 "Trimmer_POT_3326:3362P-1-103LF" H 7175 385 60  0001 C CNN
+F 2 "Trimmer_POT_3362:3362P-1-103LF" H 7175 385 60  0001 C CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/3362.pdf" H 7150 688 60  0001 C CNN
 	1    6750 820 
 	-1   0    0    1   
