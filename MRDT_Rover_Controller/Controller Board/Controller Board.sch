@@ -527,8 +527,6 @@ Wire Notes Line
 	6850 2750 11200 2750
 Wire Notes Line
 	500  500  11200 500 
-Wire Notes Line
-	6850 500  6850 2750
 Text Notes 6870 2730 0    59   ~ 12
 Joysticks w/ ADC
 Wire Wire Line
@@ -680,8 +678,6 @@ Wire Wire Line
 	6330 3350 6200 3350
 Wire Wire Line
 	6330 3500 6200 3500
-Wire Notes Line
-	11200 3720 9460 3720
 Wire Notes Line
 	9460 3720 9460 2750
 Wire Notes Line
@@ -921,4 +917,290 @@ Wire Wire Line
 Connection ~ 10520 2270
 Wire Wire Line
 	10520 2270 10520 2120
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA8ABF9
+P 7000 3000
+F 0 "#PWR?" H 7000 2850 50  0001 C CNN
+F 1 "+5V" H 7015 3173 50  0000 C CNN
+F 2 "" H 7000 3000 50  0001 C CNN
+F 3 "" H 7000 3000 50  0001 C CNN
+	1    7000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA8B7F6
+P 8350 2970
+F 0 "#PWR?" H 8350 2820 50  0001 C CNN
+F 1 "+5V" H 8365 3143 50  0000 C CNN
+F 2 "" H 8350 2970 50  0001 C CNN
+F 3 "" H 8350 2970 50  0001 C CNN
+	1    8350 2970
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6850 500  6850 3720
+Wire Notes Line
+	6850 3720 11200 3720
+Text GLabel 7770 3110 2    50   Output ~ 0
+SW1
+Text GLabel 9070 3130 2    50   Output ~ 0
+SW2
+Text GLabel 9080 3580 2    50   Output ~ 0
+SW4
+Text GLabel 4620 3350 0    50   Input ~ 0
+SW1
+Text GLabel 4610 3500 0    50   Input ~ 0
+SW2
+Text GLabel 4610 3650 0    50   Input ~ 0
+SW3
+Wire Wire Line
+	4620 3350 4700 3350
+Wire Wire Line
+	4700 3500 4610 3500
+Wire Wire Line
+	4610 3650 4700 3650
+Wire Wire Line
+	4700 3800 4620 3800
+$Comp
+L Device:R R9
+U 1 1 5DAEE33F
+P 7870 3010
+F 0 "R9" V 7730 3010 50  0000 C CNN
+F 1 "100" V 7790 3010 50  0000 C CNN
+F 2 "" V 7800 3010 50  0001 C CNN
+F 3 "~" H 7870 3010 50  0001 C CNN
+	1    7870 3010
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5DAF5DE0
+P 9200 3020
+F 0 "R10" V 9060 3020 50  0000 C CNN
+F 1 "100" V 9120 3020 50  0000 C CNN
+F 2 "" V 9130 3020 50  0001 C CNN
+F 3 "~" H 9200 3020 50  0001 C CNN
+	1    9200 3020
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5DAF6F36
+P 9210 3470
+F 0 "R12" V 9070 3470 50  0000 C CNN
+F 1 "100" V 9130 3470 50  0000 C CNN
+F 2 "" V 9140 3470 50  0001 C CNN
+F 3 "~" H 9210 3470 50  0001 C CNN
+	1    9210 3470
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 3020 9010 3020
+Wire Wire Line
+	9060 3470 9020 3470
+Wire Wire Line
+	9020 3470 9020 3580
+$Comp
+L power:GND #PWR?
+U 1 1 5DB1299A
+P 8160 2980
+F 0 "#PWR?" H 8160 2730 50  0001 C CNN
+F 1 "GND" H 8165 2807 50  0000 C CNN
+F 2 "" H 8160 2980 50  0001 C CNN
+F 3 "" H 8160 2980 50  0001 C CNN
+	1    8160 2980
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB270BF
+P 9380 2980
+F 0 "#PWR?" H 9380 2730 50  0001 C CNN
+F 1 "GND" H 9385 2807 50  0000 C CNN
+F 2 "" H 9380 2980 50  0001 C CNN
+F 3 "" H 9380 2980 50  0001 C CNN
+	1    9380 2980
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9380 2980 9380 3020
+Wire Wire Line
+	9380 3020 9350 3020
+Wire Wire Line
+	9360 3470 9380 3470
+Wire Wire Line
+	9380 3470 9380 3020
+Connection ~ 9380 3020
+Text Notes 6850 3710 0    59   ~ 12
+Push Buttons
+Wire Wire Line
+	7200 3040 7000 3040
+Wire Wire Line
+	7000 3040 7000 3000
+NoConn ~ 7200 3240
+$Comp
+L dk_Tactile-Switches:1825910-6 S1
+U 1 1 5DB41957
+P 7400 3140
+F 0 "S1" H 7400 3487 60  0000 C CNN
+F 1 "1825910-6" H 7400 3381 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 7600 3340 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7600 3440 60  0001 L CNN
+F 4 "450-1650-ND" H 7600 3540 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 7600 3640 60  0001 L CNN "MPN"
+F 6 "Switches" H 7600 3740 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 7600 3840 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7600 3940 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 7600 4040 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 7600 4140 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 7600 4240 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7600 4340 60  0001 L CNN "Status"
+	1    7400 3140
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7600 3040
+Wire Wire Line
+	8160 2980 8160 3010
+Wire Wire Line
+	7770 3110 7670 3110
+Wire Wire Line
+	7670 3110 7670 3240
+Wire Wire Line
+	7600 3240 7670 3240
+Wire Wire Line
+	7720 3010 7670 3010
+Wire Wire Line
+	7670 3010 7670 3110
+Connection ~ 7670 3110
+Wire Wire Line
+	8020 3010 8160 3010
+Connection ~ 8160 3010
+Wire Wire Line
+	8160 3010 8160 3370
+$Comp
+L dk_Tactile-Switches:1825910-6 S3
+U 1 1 5DC1C010
+P 7390 3410
+F 0 "S3" H 7530 3190 60  0000 C CNN
+F 1 "1825910-6" H 7400 3260 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 7590 3610 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7590 3710 60  0001 L CNN
+F 4 "450-1650-ND" H 7590 3810 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 7590 3910 60  0001 L CNN "MPN"
+F 6 "Switches" H 7590 4010 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 7590 4110 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7590 4210 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 7590 4310 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 7590 4410 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 7590 4510 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7590 4610 60  0001 L CNN "Status"
+	1    7390 3410
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7190 3510
+NoConn ~ 7590 3310
+Wire Wire Line
+	7190 3310 7000 3310
+Wire Wire Line
+	7000 3310 7000 3040
+Connection ~ 7000 3040
+$Comp
+L Device:R R11
+U 1 1 5DC358FD
+P 7860 3370
+F 0 "R11" V 7710 3370 50  0000 C CNN
+F 1 "R" V 7780 3370 50  0000 C CNN
+F 2 "" V 7790 3370 50  0001 C CNN
+F 3 "~" H 7860 3370 50  0001 C CNN
+	1    7860 3370
+	0    1    1    0   
+$EndComp
+Text GLabel 7780 3480 2    50   Output ~ 0
+SW3
+Wire Wire Line
+	7590 3510 7680 3510
+Wire Wire Line
+	7680 3510 7680 3480
+Wire Wire Line
+	7680 3370 7710 3370
+Wire Wire Line
+	7780 3480 7680 3480
+Connection ~ 7680 3480
+Wire Wire Line
+	7680 3480 7680 3370
+Wire Wire Line
+	8010 3370 8160 3370
+$Comp
+L dk_Tactile-Switches:1825910-6 S2
+U 1 1 5DC7615D
+P 8690 3110
+F 0 "S2" H 8700 3400 60  0000 C CNN
+F 1 "1825910-6" H 8710 3310 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 8890 3310 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 8890 3410 60  0001 L CNN
+F 4 "450-1650-ND" H 8890 3510 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 8890 3610 60  0001 L CNN "MPN"
+F 6 "Switches" H 8890 3710 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 8890 3810 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 8890 3910 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 8890 4010 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 8890 4110 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 8890 4210 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8890 4310 60  0001 L CNN "Status"
+	1    8690 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Tactile-Switches:1825910-6 S4
+U 1 1 5DC78DCF
+P 8690 3530
+F 0 "S4" H 8690 3790 60  0000 C CNN
+F 1 "1825910-6" H 8700 3720 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 8890 3730 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 8890 3830 60  0001 L CNN
+F 4 "450-1650-ND" H 8890 3930 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 8890 4030 60  0001 L CNN "MPN"
+F 6 "Switches" H 8890 4130 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 8890 4230 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 8890 4330 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 8890 4430 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 8890 4530 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 8890 4630 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8890 4730 60  0001 L CNN "Status"
+	1    8690 3530
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8490 3630
+NoConn ~ 8890 3430
+NoConn ~ 8500 3210
+NoConn ~ 8890 3010
+Wire Wire Line
+	8350 3430 8490 3430
+Wire Wire Line
+	8350 2970 8350 3010
+Wire Wire Line
+	8490 3010 8350 3010
+Connection ~ 8350 3010
+Wire Wire Line
+	8350 3010 8350 3430
+Wire Wire Line
+	8890 3210 9010 3210
+Wire Wire Line
+	9010 3020 9010 3130
+Wire Wire Line
+	9070 3130 9010 3130
+Connection ~ 9010 3130
+Wire Wire Line
+	9010 3130 9010 3210
+Wire Wire Line
+	9020 3580 9080 3580
+Wire Wire Line
+	9020 3580 9020 3630
+Wire Wire Line
+	9020 3630 8890 3630
+Connection ~ 9020 3580
+Text GLabel 4620 3800 0    50   Input ~ 0
+SW4
 $EndSCHEMATC
