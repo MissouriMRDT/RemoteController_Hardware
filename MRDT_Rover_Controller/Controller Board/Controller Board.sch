@@ -271,41 +271,8 @@ Wire Wire Line
 	6320 3050 6200 3050
 Wire Wire Line
 	6200 3200 6320 3200
-$Comp
-L power:+5V #PWR0105
-U 1 1 5D90DC34
-P 2940 630
-F 0 "#PWR0105" H 2940 480 50  0001 C CNN
-F 1 "+5V" V 2955 758 50  0000 L CNN
-F 2 "" H 2940 630 50  0001 C CNN
-F 3 "" H 2940 630 50  0001 C CNN
-	1    2940 630 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 5D90F2FA
-P 5560 1880
-F 0 "#PWR0106" H 5560 1730 50  0001 C CNN
-F 1 "+5V" V 5575 2008 50  0000 L CNN
-F 2 "" H 5560 1880 50  0001 C CNN
-F 3 "" H 5560 1880 50  0001 C CNN
-	1    5560 1880
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5560 1880 5480 1880
-$Comp
-L power:+5V #PWR0107
-U 1 1 5D912A2A
-P 6090 1350
-F 0 "#PWR0107" H 6090 1200 50  0001 C CNN
-F 1 "+5V" H 6105 1523 50  0000 C CNN
-F 2 "" H 6090 1350 50  0001 C CNN
-F 3 "" H 6090 1350 50  0001 C CNN
-	1    6090 1350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5D91AF70
@@ -321,28 +288,6 @@ Wire Notes Line
 	6850 2550 2500 2550
 Text Notes 2510 2540 0    59   ~ 12
 I2C_16X2_LCD
-$Comp
-L power:+5V #PWR0111
-U 1 1 5D94233E
-P 2050 1500
-F 0 "#PWR0111" H 2050 1350 50  0001 C CNN
-F 1 "+5V" V 2065 1628 50  0000 L CNN
-F 2 "" H 2050 1500 50  0001 C CNN
-F 3 "" H 2050 1500 50  0001 C CNN
-	1    2050 1500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0112
-U 1 1 5D9432CF
-P 5300 4950
-F 0 "#PWR0112" H 5300 4800 50  0001 C CNN
-F 1 "+5V" H 5315 5115 39  0000 C CNN
-F 2 "" H 5300 4950 50  0001 C CNN
-F 3 "" H 5300 4950 50  0001 C CNN
-	1    5300 4950
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 5D943E61
@@ -378,28 +323,6 @@ F 1 "2-Axis Joystick" H 8930 2020 50  0000 L CNN
 F 2 "JOYSTICK:JOYSTICK" H 9230 1480 50  0001 L BNN
 F 3 "" H 9230 1480 50  0001 C CNN
 	1    9230 1480
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0114
-U 1 1 5D95701B
-P 7400 1000
-F 0 "#PWR0114" H 7400 850 50  0001 C CNN
-F 1 "+5V" H 7415 1173 50  0000 C CNN
-F 2 "" H 7400 1000 50  0001 C CNN
-F 3 "" H 7400 1000 50  0001 C CNN
-	1    7400 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0115
-U 1 1 5D9578E5
-P 8720 990
-F 0 "#PWR0115" H 8720 840 50  0001 C CNN
-F 1 "+5V" H 8735 1163 50  0000 C CNN
-F 2 "" H 8720 990 50  0001 C CNN
-F 3 "" H 8720 990 50  0001 C CNN
-	1    8720 990 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -573,28 +496,6 @@ F 3 "" H 10920 1620 50  0001 C CNN
 	1    10920 1620
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR0119
-U 1 1 5D9AE70C
-P 9820 1620
-F 0 "#PWR0119" H 9820 1470 50  0001 C CNN
-F 1 "+5V" H 9835 1793 50  0000 C CNN
-F 2 "" H 9820 1620 50  0001 C CNN
-F 3 "" H 9820 1620 50  0001 C CNN
-	1    9820 1620
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0120
-U 1 1 5D9AF1F5
-P 9820 1320
-F 0 "#PWR0120" H 9820 1170 50  0001 C CNN
-F 1 "+5V" H 9835 1493 50  0000 C CNN
-F 2 "" H 9820 1320 50  0001 C CNN
-F 3 "" H 9820 1320 50  0001 C CNN
-	1    9820 1320
-	0    -1   -1   0   
-$EndComp
 Text GLabel 10020 2190 3    50   BiDi ~ 0
 LeftVert
 Text GLabel 10120 2190 3    50   BiDi ~ 0
@@ -623,17 +524,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10230 3260 50
 F 3 "~" H 10230 3260 50  0001 C CNN
 	1    10230 3260
 	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0121
-U 1 1 5D9D19B1
-P 9870 3260
-F 0 "#PWR0121" H 9870 3110 50  0001 C CNN
-F 1 "+5V" V 9885 3388 50  0000 L CNN
-F 2 "" H 9870 3260 50  0001 C CNN
-F 3 "" H 9870 3260 50  0001 C CNN
-	1    9870 3260
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	10130 3260 9870 3260
@@ -673,17 +563,6 @@ F 2 "Trimmer_POT_3326:3362P-1-103LF" H 7175 385 60  0001 C CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/3362.pdf" H 7150 688 60  0001 C CNN
 	1    6750 820 
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR0108
-U 1 1 5D9176C5
-P 5820 820
-F 0 "#PWR0108" H 5820 670 50  0001 C CNN
-F 1 "+5V" H 5835 993 50  0000 C CNN
-F 2 "" H 5820 820 50  0001 C CNN
-F 3 "" H 5820 820 50  0001 C CNN
-	1    5820 820 
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5950 820  5820 820 
@@ -742,17 +621,6 @@ F 1 "100" H 2000 2625 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1860 2670 50  0001 C CNN
 F 3 "~" H 1930 2670 50  0001 C CNN
 	1    1930 2670
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0123
-U 1 1 5D9DFBBD
-P 1130 2370
-F 0 "#PWR0123" H 1130 2220 50  0001 C CNN
-F 1 "+5V" H 1145 2543 50  0000 C CNN
-F 2 "" H 1130 2370 50  0001 C CNN
-F 3 "" H 1130 2370 50  0001 C CNN
-	1    1130 2370
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -827,32 +695,10 @@ Wire Wire Line
 	6320 2900 6200 2900
 NoConn ~ 10620 2120
 NoConn ~ 10720 2120
-$Comp
-L power:+5V #PWR0126
-U 1 1 5D9F8089
-P 5240 870
-F 0 "#PWR0126" H 5240 720 50  0001 C CNN
-F 1 "+5V" V 5255 998 50  0000 L CNN
-F 2 "" H 5240 870 50  0001 C CNN
-F 3 "" H 5240 870 50  0001 C CNN
-	1    5240 870 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5240 870  5080 870 
 Wire Wire Line
 	5080 870  5080 880 
-$Comp
-L power:+5V #PWR0127
-U 1 1 5D9FD5FC
-P 11100 1990
-F 0 "#PWR0127" H 11100 1840 50  0001 C CNN
-F 1 "+5V" H 11115 2163 50  0000 C CNN
-F 2 "" H 11100 1990 50  0001 C CNN
-F 3 "" H 11100 1990 50  0001 C CNN
-	1    11100 1990
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R7
 U 1 1 5DA03F0A
@@ -896,28 +742,6 @@ Wire Wire Line
 Connection ~ 10520 2270
 Wire Wire Line
 	10520 2270 10520 2120
-$Comp
-L power:+5V #PWR0128
-U 1 1 5DA8ABF9
-P 7000 3000
-F 0 "#PWR0128" H 7000 2850 50  0001 C CNN
-F 1 "+5V" H 7015 3173 50  0000 C CNN
-F 2 "" H 7000 3000 50  0001 C CNN
-F 3 "" H 7000 3000 50  0001 C CNN
-	1    7000 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0129
-U 1 1 5DA8B7F6
-P 8350 2970
-F 0 "#PWR0129" H 8350 2820 50  0001 C CNN
-F 1 "+5V" H 8365 3143 50  0000 C CNN
-F 2 "" H 8350 2970 50  0001 C CNN
-F 3 "" H 8350 2970 50  0001 C CNN
-	1    8350 2970
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	6850 500  6850 3720
 Wire Notes Line
@@ -1210,4 +1034,36 @@ Wire Wire Line
 	1550 1200 1550 1500
 Wire Wire Line
 	1850 900  1850 1500
+Text GLabel 2050 1500 2    50   Output ~ 0
+5V
+Text GLabel 1130 2370 1    50   Input ~ 0
+5V
+Text GLabel 2940 630  0    50   Input ~ 0
+5V
+Text GLabel 6090 1350 1    50   Input ~ 0
+5V
+Text GLabel 5820 820  1    50   Input ~ 0
+5V
+Text GLabel 5240 870  2    50   Input ~ 0
+5V
+Text GLabel 5560 1880 2    50   Input ~ 0
+5V
+Text GLabel 7400 1000 1    50   Input ~ 0
+5V
+Text GLabel 8720 990  1    50   Input ~ 0
+5V
+Text GLabel 9820 1320 0    50   Input ~ 0
+5V
+Text GLabel 9820 1620 0    50   Input ~ 0
+5V
+Text GLabel 11100 1990 1    50   Input ~ 0
+5V
+Text GLabel 9870 3260 0    50   Input ~ 0
+5V
+Text GLabel 8350 2970 1    50   Input ~ 0
+5V
+Text GLabel 7000 3000 1    50   Input ~ 0
+5V
+Text GLabel 5300 4950 3    50   Input ~ 0
+5V
 $EndSCHEMATC
