@@ -26,17 +26,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR0101
-U 1 1 5D842E46
-P 1550 1650
-F 0 "#PWR0101" H 1550 1400 50  0001 C CNN
-F 1 "GNDREF" H 1555 1477 50  0000 C CNN
-F 2 "" H 1550 1650 50  0001 C CNN
-F 3 "" H 1550 1650 50  0001 C CNN
-	1    1550 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5D843694
 P 1700 1500
@@ -1066,4 +1055,15 @@ Text GLabel 7000 3000 1    50   Input ~ 0
 5V
 Text GLabel 5300 4950 3    50   Input ~ 0
 5V
+$Comp
+L power:GND #PWR?
+U 1 1 5DDD60BD
+P 1550 1650
+F 0 "#PWR?" H 1550 1400 50  0001 C CNN
+F 1 "GND" H 1555 1477 50  0000 C CNN
+F 2 "" H 1550 1650 50  0001 C CNN
+F 3 "" H 1550 1650 50  0001 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

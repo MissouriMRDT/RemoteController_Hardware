@@ -407,13 +407,13 @@ LeftVert
 Text GLabel 7340 1570 0    50   BiDi ~ 0
 LeftHorz
 Text GLabel 7340 1870 0    50   BiDi ~ 0
-LeftSelect
+LFT_SEL
 Text GLabel 8650 1180 0    50   BiDi ~ 0
 RightVert
 Text GLabel 8660 1580 0    50   BiDi ~ 0
 RightHorz
 Text GLabel 8660 1880 0    50   BiDi ~ 0
-RightSelect
+RGHT_SEL
 Wire Notes Line
 	6850 2750 11200 2750
 Wire Notes Line
@@ -1056,10 +1056,10 @@ Text GLabel 7000 3000 1    50   Input ~ 0
 Text GLabel 5300 4950 3    50   Input ~ 0
 5V
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5DDD60BD
 P 1550 1650
-F 0 "#PWR?" H 1550 1400 50  0001 C CNN
+F 0 "#PWR0101" H 1550 1400 50  0001 C CNN
 F 1 "GND" H 1555 1477 50  0000 C CNN
 F 2 "" H 1550 1650 50  0001 C CNN
 F 3 "" H 1550 1650 50  0001 C CNN
