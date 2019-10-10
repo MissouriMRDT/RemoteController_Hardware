@@ -856,4 +856,21 @@ Text GLabel 6320 2900 2    50   Output ~ 0
 D0
 Wire Wire Line
 	6320 2900 6200 2900
+NoConn ~ 10620 2120
+NoConn ~ 10720 2120
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9F8089
+P 5240 870
+F 0 "#PWR?" H 5240 720 50  0001 C CNN
+F 1 "+5V" V 5255 998 50  0000 L CNN
+F 2 "" H 5240 870 50  0001 C CNN
+F 3 "" H 5240 870 50  0001 C CNN
+	1    5240 870 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5240 870  5080 870 
+Wire Wire Line
+	5080 870  5080 880 
 $EndSCHEMATC
