@@ -724,11 +724,11 @@ Wire Notes Line
 	6850 500  6850 3720
 Wire Notes Line
 	6850 3720 11200 3720
-Text GLabel 7770 3110 2    50   Output ~ 0
+Text GLabel 7780 3480 2    50   Output ~ 0
 SW1
 Text GLabel 9070 3130 2    50   Output ~ 0
 SW2
-Text GLabel 9080 3580 2    50   Output ~ 0
+Text GLabel 7770 3110 2    50   Output ~ 0
 SW4
 Text GLabel 4620 3350 0    50   Input ~ 0
 SW1
@@ -822,10 +822,10 @@ Wire Wire Line
 	7000 3040 7000 3000
 NoConn ~ 7200 3240
 $Comp
-L dk_Tactile-Switches:1825910-6 S1
+L dk_Tactile-Switches:1825910-6 S4
 U 1 1 5DB41957
 P 7400 3140
-F 0 "S1" H 7400 3487 60  0000 C CNN
+F 0 "S4" H 7400 3487 60  0000 C CNN
 F 1 "1825910-6" H 7400 3381 60  0000 C CNN
 F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 7600 3340 60  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7600 3440 60  0001 L CNN
@@ -861,10 +861,10 @@ Connection ~ 8160 3010
 Wire Wire Line
 	8160 3010 8160 3370
 $Comp
-L dk_Tactile-Switches:1825910-6 S3
+L dk_Tactile-Switches:1825910-6 S1
 U 1 1 5DC1C010
 P 7390 3410
-F 0 "S3" H 7530 3190 60  0000 C CNN
+F 0 "S1" H 7530 3190 60  0000 C CNN
 F 1 "1825910-6" H 7400 3260 60  0000 C CNN
 F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 7590 3610 60  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7590 3710 60  0001 L CNN
@@ -896,7 +896,7 @@ F 3 "~" H 7860 3370 50  0001 C CNN
 	1    7860 3370
 	0    1    1    0   
 $EndComp
-Text GLabel 7780 3480 2    50   Output ~ 0
+Text GLabel 9080 3580 2    50   Output ~ 0
 SW3
 Wire Wire Line
 	7590 3510 7680 3510
@@ -932,10 +932,10 @@ F 12 "Active" H 8890 4310 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Tactile-Switches:1825910-6 S4
+L dk_Tactile-Switches:1825910-6 S3
 U 1 1 5DC78DCF
 P 8690 3530
-F 0 "S4" H 8690 3790 60  0000 C CNN
+F 0 "S3" H 8690 3790 60  0000 C CNN
 F 1 "1825910-6" H 8700 3720 60  0000 C CNN
 F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 8890 3730 60  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 8890 3830 60  0001 L CNN
