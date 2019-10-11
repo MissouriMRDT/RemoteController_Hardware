@@ -15,31 +15,20 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:L7805 5V_Regulator1
-U 1 1 5D8418B6
-P 1550 900
-F 0 "5V_Regulator1" H 1550 1142 50  0000 C CNN
-F 1 "L7805" H 1550 1051 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1575 750 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1550 850 50  0001 C CNN
-	1    1550 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5D843694
-P 1700 1500
-F 0 "C1" V 1448 1500 50  0000 C CNN
-F 1 "1uF" V 1539 1500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1738 1350 50  0001 C CNN
-F 3 "~" H 1700 1500 50  0001 C CNN
-	1    1700 1500
+P 1940 1500
+F 0 "C1" V 1688 1500 50  0000 C CNN
+F 1 "1uF" V 1779 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1978 1350 50  0001 C CNN
+F 3 "~" H 1940 1500 50  0001 C CNN
+	1    1940 1500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1550 1650 1550 1500
-Connection ~ 1550 1500
-Connection ~ 1850 1500
+	1790 1650 1790 1500
+Connection ~ 1790 1500
+Connection ~ 2090 1500
 $Comp
 L Display_Character:RC1602A 16x2_LCD1
 U 1 1 5D8EDD80
@@ -67,7 +56,7 @@ F 3 "" H 3760 2320 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 1500 2050 1500
+	2090 1500 2290 1500
 $Comp
 L power:GND #PWR0103
 U 1 1 5D918DEA
@@ -735,11 +724,11 @@ Wire Notes Line
 	6850 500  6850 3720
 Wire Notes Line
 	6850 3720 11200 3720
-Text GLabel 7770 3110 2    50   Output ~ 0
+Text GLabel 7780 3480 2    50   Output ~ 0
 SW1
 Text GLabel 9070 3130 2    50   Output ~ 0
 SW2
-Text GLabel 9080 3580 2    50   Output ~ 0
+Text GLabel 7770 3110 2    50   Output ~ 0
 SW4
 Text GLabel 4620 3350 0    50   Input ~ 0
 SW1
@@ -833,10 +822,10 @@ Wire Wire Line
 	7000 3040 7000 3000
 NoConn ~ 7200 3240
 $Comp
-L dk_Tactile-Switches:1825910-6 S1
+L dk_Tactile-Switches:1825910-6 S4
 U 1 1 5DB41957
 P 7400 3140
-F 0 "S1" H 7400 3487 60  0000 C CNN
+F 0 "S4" H 7400 3487 60  0000 C CNN
 F 1 "1825910-6" H 7400 3381 60  0000 C CNN
 F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 7600 3340 60  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7600 3440 60  0001 L CNN
@@ -872,10 +861,10 @@ Connection ~ 8160 3010
 Wire Wire Line
 	8160 3010 8160 3370
 $Comp
-L dk_Tactile-Switches:1825910-6 S3
+L dk_Tactile-Switches:1825910-6 S1
 U 1 1 5DC1C010
 P 7390 3410
-F 0 "S3" H 7530 3190 60  0000 C CNN
+F 0 "S1" H 7530 3190 60  0000 C CNN
 F 1 "1825910-6" H 7400 3260 60  0000 C CNN
 F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 7590 3610 60  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 7590 3710 60  0001 L CNN
@@ -907,7 +896,7 @@ F 3 "~" H 7860 3370 50  0001 C CNN
 	1    7860 3370
 	0    1    1    0   
 $EndComp
-Text GLabel 7780 3480 2    50   Output ~ 0
+Text GLabel 9080 3580 2    50   Output ~ 0
 SW3
 Wire Wire Line
 	7590 3510 7680 3510
@@ -943,10 +932,10 @@ F 12 "Active" H 8890 4310 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Tactile-Switches:1825910-6 S4
+L dk_Tactile-Switches:1825910-6 S3
 U 1 1 5DC78DCF
 P 8690 3530
-F 0 "S4" H 8690 3790 60  0000 C CNN
+F 0 "S3" H 8690 3790 60  0000 C CNN
 F 1 "1825910-6" H 8700 3720 60  0000 C CNN
 F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 8890 3730 60  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 8890 3830 60  0001 L CNN
@@ -993,35 +982,11 @@ Wire Wire Line
 Connection ~ 9020 3580
 Text GLabel 4620 3800 0    50   Input ~ 0
 SW4
-$Comp
-L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
-U 1 1 5DD0C8AF
-P 1070 1200
-F 0 "BAT1" V 1000 890 60  0000 L CNN
-F 1 "BC9VPC" V 1100 750 60  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 1270 1400 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1270 1500 60  0001 L CNN
-F 4 "BC9VPC-ND" H 1270 1600 60  0001 L CNN "Digi-Key_PN"
-F 5 "BC9VPC" H 1270 1700 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 1270 1800 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 1270 1900 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1270 2000 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 1270 2100 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER 9V PC PIN" H 1270 2200 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 1270 2300 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1270 2400 60  0001 L CNN "Status"
-	1    1070 1200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	1070 1500 1550 1500
+	1790 1200 1790 1500
 Wire Wire Line
-	1070 900  1250 900 
-Wire Wire Line
-	1550 1200 1550 1500
-Wire Wire Line
-	1850 900  1850 1500
-Text GLabel 2050 1500 2    50   Output ~ 0
+	2090 900  2090 1500
+Text GLabel 2290 1500 2    50   Output ~ 0
 5V
 Text GLabel 1130 2370 1    50   Input ~ 0
 5V
@@ -1056,14 +1021,78 @@ Text GLabel 5300 4950 3    50   Input ~ 0
 $Comp
 L power:GND #PWR0101
 U 1 1 5DDD60BD
-P 1550 1650
-F 0 "#PWR0101" H 1550 1400 50  0001 C CNN
-F 1 "GND" H 1555 1477 50  0000 C CNN
-F 2 "" H 1550 1650 50  0001 C CNN
-F 3 "" H 1550 1650 50  0001 C CNN
-	1    1550 1650
+P 1790 1650
+F 0 "#PWR0101" H 1790 1400 50  0001 C CNN
+F 1 "GND" H 1795 1477 50  0000 C CNN
+F 2 "" H 1790 1650 50  0001 C CNN
+F 3 "" H 1790 1650 50  0001 C CNN
+	1    1790 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7190 3310 7000 3310
+$Comp
+L dk_Slide-Switches:EG1218 SW1
+U 1 1 5DA15FC2
+P 1150 1000
+F 0 "SW1" H 1150 1281 50  0000 C CNN
+F 1 "EG1218" H 1150 1190 50  0000 C CNN
+F 2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" H 1350 1200 50  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 1350 1300 60  0001 L CNN
+F 4 "EG1903-ND" H 1350 1400 60  0001 L CNN "Digi-Key_PN"
+F 5 "EG1218" H 1350 1500 60  0001 L CNN "MPN"
+F 6 "Switches" H 1350 1600 60  0001 L CNN "Category"
+F 7 "Slide Switches" H 1350 1700 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 1350 1800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 1350 1900 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH SLIDE SPDT 200MA 30V" H 1350 2000 60  0001 L CNN "Description"
+F 11 "E-Switch" H 1350 2100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1350 2200 60  0001 L CNN "Status"
+	1    1150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
+U 1 1 5DD0C8AF
+P 680 880
+F 0 "BAT1" V 340 1060 60  0000 L CNN
+F 1 "BC9VPC" V 410 1060 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 880 1080 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 1180 60  0001 L CNN
+F 4 "BC9VPC-ND" H 880 1280 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC9VPC" H 880 1380 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 880 1480 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 880 1580 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 1680 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 880 1780 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER 9V PC PIN" H 880 1880 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 880 1980 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 880 2080 60  0001 L CNN "Status"
+	1    680  880 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	840  580  840  1000
+Wire Wire Line
+	840  1000 950  1000
+Wire Wire Line
+	1350 900  1490 900 
+Wire Wire Line
+	680  1180 680  1500
+$Comp
+L Regulator_Linear:L7805 5V_Regulator1
+U 1 1 5D8418B6
+P 1790 900
+F 0 "5V_Regulator1" H 1790 1142 50  0000 C CNN
+F 1 "L7805" H 1790 1051 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1815 750 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1790 850 50  0001 C CNN
+	1    1790 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	680  1500 1790 1500
+NoConn ~ 1350 1100
+Wire Wire Line
+	680  580  840  580 
 $EndSCHEMATC
