@@ -894,8 +894,6 @@ $EndComp
 NoConn ~ 7190 3510
 NoConn ~ 7590 3310
 Wire Wire Line
-	7190 3310 7000 3310
-Wire Wire Line
 	7000 3310 7000 3040
 Connection ~ 7000 3040
 $Comp
@@ -1066,4 +1064,6 @@ F 3 "" H 1550 1650 50  0001 C CNN
 	1    1550 1650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7190 3310 7000 3310
 $EndSCHEMATC
