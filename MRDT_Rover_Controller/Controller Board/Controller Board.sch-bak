@@ -532,7 +532,7 @@ Wire Notes Line
 Text Notes 9470 3700 0    59   ~ 12
 Drive Mode Jumper
 $Comp
-L Trimmer_POT_3326:3362P-1-103LF R4
+L Trimmer_POT_3362:3362P-1-103LF R4
 U 1 1 5D9EE8A7
 P 6750 820
 F 0 "R4" H 7150 582 60  0000 C CNN
@@ -1051,34 +1051,10 @@ F 12 "Active" H 1350 2200 60  0001 L CNN "Status"
 	1    1150 1000
 	1    0    0    -1  
 $EndComp
-$Comp
-L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
-U 1 1 5DD0C8AF
-P 680 880
-F 0 "BAT1" V 340 1060 60  0000 L CNN
-F 1 "BC9VPC" V 410 1060 60  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 880 1080 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 1180 60  0001 L CNN
-F 4 "BC9VPC-ND" H 880 1280 60  0001 L CNN "Digi-Key_PN"
-F 5 "BC9VPC" H 880 1380 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 880 1480 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 880 1580 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 1680 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 880 1780 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER 9V PC PIN" H 880 1880 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 880 1980 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 880 2080 60  0001 L CNN "Status"
-	1    680  880 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	840  580  840  1000
 Wire Wire Line
 	840  1000 950  1000
 Wire Wire Line
 	1350 900  1490 900 
-Wire Wire Line
-	680  1180 680  1500
 $Comp
 L Regulator_Linear:L7805 5V_Regulator1
 U 1 1 5D8418B6
@@ -1093,6 +1069,28 @@ $EndComp
 Wire Wire Line
 	680  1500 1790 1500
 NoConn ~ 1350 1100
+$Comp
+L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
+U 1 1 5DD0C8AF
+P 680 1200
+F 0 "BAT1" V 240 1080 60  0000 L CNN
+F 1 "BC9VPC" V 330 1080 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 880 1400 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 1500 60  0001 L CNN
+F 4 "BC9VPC-ND" H 880 1600 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC9VPC" H 880 1700 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 880 1800 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 880 1900 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 2000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 880 2100 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER 9V PC PIN" H 880 2200 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 880 2300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 880 2400 60  0001 L CNN "Status"
+	1    680  1200
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	680  580  840  580 
+	840  1000 840  900 
+Wire Wire Line
+	840  900  680  900 
 $EndSCHEMATC
