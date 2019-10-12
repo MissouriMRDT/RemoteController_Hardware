@@ -532,7 +532,7 @@ Wire Notes Line
 Text Notes 9470 3700 0    59   ~ 12
 Drive Mode Jumper
 $Comp
-L Trimmer_POT_3362:3362P-1-103LF R4
+L Trimmer_POT_3326:3362P-1-103LF R4
 U 1 1 5D9EE8A7
 P 6750 820
 F 0 "R4" H 7150 582 60  0000 C CNN
