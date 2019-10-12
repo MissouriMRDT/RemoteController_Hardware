@@ -361,6 +361,11 @@
       (net 67 "Net-(BAT1-PadPOS)"))
     (pad 1 thru_hole rect (at 0 0) (size 1.9 1.9) (drill 0.9) (layers *.Cu *.Mask)
       (net 15 "Net-(5V_Regulator1-Pad1)"))
+    (model "B:/GitHub/RemoteController_Hardware/3D Models/EG1218.stp"
+      (offset (xyz 2.5 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module digikey-footprints:Switch_Tactile_THT_6x6mm (layer F.Cu) (tedit 5AF34E1F) (tstamp 5DA03F9C)
