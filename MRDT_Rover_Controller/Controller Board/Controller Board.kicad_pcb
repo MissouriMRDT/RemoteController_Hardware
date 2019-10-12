@@ -2,10 +2,10 @@
 
   (general
     (thickness 1.6)
-    (drawings 25)
+    (drawings 26)
     (tracks 605)
     (zones 0)
-    (modules 30)
+    (modules 31)
     (nets 69)
   )
 
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.381)
+    (last_trace_width 0.25)
     (user_trace_width 0.381)
     (user_trace_width 15)
     (user_trace_width 30)
@@ -238,6 +238,34 @@
     (add_net SafeDrive)
     (add_net TankDrive)
     (add_net V0)
+  )
+
+  (module MRDT_Silkscreens:0-README (layer F.Cu) (tedit 5C6759CC) (tstamp 5DA1AC6F)
+    (at 88.5444 147.6248)
+    (fp_text reference G*** (at -10.2362 6.0198) (layer Dwgs.User) hide
+      (effects (font (size 0.2 0.2) (thickness 0.05)))
+    )
+    (fp_text value LOGO (at -10.541 -0.7874) (layer Dwgs.User) hide
+      (effects (font (size 0.2 0.2) (thickness 0.05)))
+    )
+    (fp_text user "Silkscreen Naming Convention" (at 6.604 -5.334) (layer F.SilkS)
+      (effects (font (size 1.5 1.5) (thickness 0.15)))
+    )
+    (fp_text user "zz: Old Rover Logos" (at -3.556 3.81) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user "z: Current Member Signatures" (at 1.016 2.032) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user "2: Memes" (at -6.858 0.254) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user "1: Current-Year Rover Logos" (at 0.762 -1.524) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user "0: Team Logos" (at -4.826 -3.302) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
   )
 
   (module Display:WC1602A (layer F.Cu) (tedit 5A02FE80) (tstamp 5D9DB3CB)
@@ -1573,6 +1601,9 @@
     )
   )
 
+  (gr_text "RoveCore- PR Controller\nMars Rover Design Team\nMissouri S&T, 2019\nJared Allen" (at 90.17 118.4656) (layer F.SilkS)
+    (effects (font (size 1.27 1.27) (thickness 0.2032)))
+  )
   (gr_line (start 97.6376 133.5278) (end 106.5784 124.5362) (layer Edge.Cuts) (width 0.25) (tstamp 5D9DCAA8))
   (gr_line (start 84.9122 133.5278) (end 97.6376 133.5278) (layer Edge.Cuts) (width 0.25))
   (gr_line (start 75.8952 124.4854) (end 84.9122 133.5278) (layer Edge.Cuts) (width 0.25))
