@@ -917,7 +917,7 @@
   )
 
   (module digikey-footprints:Battery_Holder_9V_BC9VPC-ND (layer B.Cu) (tedit 5BB7D06D) (tstamp 5DA03BF4)
-    (at 156.21 86.614)
+    (at 156.21 86.5632)
     (descr http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf)
     (path /5DD0C8AF)
     (fp_text reference BAT1 (at -12.54 4.91 180) (layer B.SilkS)
@@ -1833,7 +1833,7 @@
     )
   )
 
-  (gr_text "RoveCore- Controller\nMars Rover Design Team\nMissouri S&T, 2019\nJared Allen" (at 90.17 118.4656) (layer F.SilkS)
+  (gr_text "RoveCore- Controller\nMars Rover Design Team\nMissouri S&T, 2020\nJared Allen" (at 90.17 118.4656) (layer F.SilkS)
     (effects (font (size 1.397 1.397) (thickness 0.2032)))
   )
   (gr_line (start 97.6376 133.5278) (end 106.5784 124.5362) (layer Edge.Cuts) (width 0.25) (tstamp 5D9DCAA8))
