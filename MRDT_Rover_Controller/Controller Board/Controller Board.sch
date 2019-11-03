@@ -15,19 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C C1
-U 1 1 5D843694
-P 2110 1500
-F 0 "C1" V 1858 1500 50  0000 C CNN
-F 1 "1uF" V 1949 1500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2148 1350 50  0001 C CNN
-F 3 "~" H 2110 1500 50  0001 C CNN
-	1    2110 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1950 1660 1950 1510
-$Comp
 L Display_Character:RC1602A 16x2_LCD1
 U 1 1 5D8EDD80
 P 5080 1580
@@ -1096,6 +1083,13 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    1950 900 
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2250 900  2300 900 
+Wire Wire Line
+	2300 900  2300 1500
+Connection ~ 2300 1500
+Wire Wire Line
+	2300 1500 2340 1500
 $Comp
 L Device:C C2
 U 1 1 5DC1FE51
@@ -1108,19 +1102,23 @@ F 3 "~" H 1500 900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1950 1200 1950 1500
+	680  1500 1950 1500
 Wire Wire Line
-	1950 1500 1960 1500
+	1950 1500 1950 1660
 Connection ~ 1950 1500
 Wire Wire Line
+	1950 1500 1960 1500
+$Comp
+L Device:C C1
+U 1 1 5D843694
+P 2110 1500
+F 0 "C1" V 1858 1500 50  0000 C CNN
+F 1 "1uF" V 1949 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2148 1350 50  0001 C CNN
+F 3 "~" H 2110 1500 50  0001 C CNN
+	1    2110 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
 	2260 1500 2300 1500
-Wire Wire Line
-	2250 900  2300 900 
-Wire Wire Line
-	2300 900  2300 1500
-Connection ~ 2300 1500
-Wire Wire Line
-	2300 1500 2340 1500
-Wire Wire Line
-	680  1500 1950 1500
 $EndSCHEMATC
