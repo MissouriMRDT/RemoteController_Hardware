@@ -1093,16 +1093,16 @@ Wire Wire Line
 $Comp
 L Device:C C2
 U 1 1 5DC1FE51
-P 1500 900
-F 0 "C2" V 1248 900 50  0000 C CNN
-F 1 "1uF" V 1339 900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 750 50  0001 C CNN
-F 3 "~" H 1500 900 50  0001 C CNN
-	1    1500 900 
-	0    1    1    0   
+P 1500 1050
+F 0 "C2" H 1350 1170 50  0000 C CNN
+F 1 "1uF" H 1340 1090 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 900 50  0001 C CNN
+F 3 "~" H 1500 1050 50  0001 C CNN
+	1    1500 1050
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	680  1500 1950 1500
+	680  1500 1500 1500
 Wire Wire Line
 	1950 1500 1950 1660
 Connection ~ 1950 1500
@@ -1121,4 +1121,14 @@ F 3 "~" H 2110 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2260 1500 2300 1500
+Wire Wire Line
+	1500 900  1650 900 
+Wire Wire Line
+	1350 900  1500 900 
+Connection ~ 1500 900 
+Wire Wire Line
+	1500 1200 1500 1500
+Connection ~ 1500 1500
+Wire Wire Line
+	1500 1500 1950 1500
 $EndSCHEMATC

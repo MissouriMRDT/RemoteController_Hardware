@@ -1131,4 +1131,6 @@ Wire Wire Line
 Connection ~ 1500 1500
 Wire Wire Line
 	1500 1500 1950 1500
+Wire Wire Line
+	1950 1200 1950 1500
 $EndSCHEMATC
