@@ -11,11 +11,15 @@ LiquidCrystal_I2C lcd(0x20,2,1,0,4,5,6,7,3,POSITIVE);
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-  Serial.println("HERE");
   lcd.begin(16,2);
   pinMode(D0,OUTPUT);
   pinMode(D3,INPUT);
   lcd.setCursor(0,0);
+  lcd.print("   Mars Rover   ");
+  lcd.setCursor(0,1);
+  lcd.print("  Design  Team  ");
+  delay(4000);
+  lcd.clear();
 }
 
 void loop() {
@@ -29,6 +33,7 @@ void loop() {
   lcd.setCursor(0,1);
   lcd.print("X-Value: " + String(adc.readADC(1)));
   delay(100);
+  lcd.clear();
   if((adc.readADC(5)) < 100)
     digitalWrite(D0,HIGH);
 
