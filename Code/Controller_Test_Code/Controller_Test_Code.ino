@@ -14,6 +14,7 @@ void setup() {
   lcd.begin(16,2);
   pinMode(D0,OUTPUT);
   pinMode(D3,INPUT);
+  pinMode(D6,INPUT);
   lcd.setCursor(0,0);
   lcd.print("   Mars Rover   ");
   lcd.setCursor(0,1);
@@ -34,11 +35,12 @@ void loop() {
   lcd.print("X-Value: " + String(adc.readADC(1)));
   delay(100);
   lcd.clear();
-  if((adc.readADC(5)) < 100)
+  if(((adc.readADC(5)) < 100)||(digitalRead(D6) == HIGH))
     digitalWrite(D0,HIGH);
 
   else
     digitalWrite(D0,LOW);
 
   Serial.println("Value: " + String(digitalRead(D3)));
+  Serial.println("Button:" + String(digitalRead(D6)));
 }

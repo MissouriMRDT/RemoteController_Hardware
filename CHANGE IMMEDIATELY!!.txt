@@ -1,0 +1,11 @@
+https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/
+
+
+
+While the cs pin (GPIO 15) is labeled for GPIO use, it will casue a boot failure if the pin is pulled high. 
+This is labelled SD1 on the board. CMD will also cause a failure if pulled high.
+With two buttons remaining, the recommendation is to move the other two buttons to be read either through the 
+ADC which currently has two open ports.
+The RX and TX ports, which are also labeled as GPIO, will cause prevent the esp from booting if they are driven HIGH at any
+time during the load process, thus these pins are not recommended. 
+Only current option is to use the the two open points on the MCP3008 ADC
