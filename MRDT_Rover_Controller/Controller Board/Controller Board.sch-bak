@@ -501,9 +501,9 @@ TankDrive
 Text GLabel 10100 3540 0    50   BiDi ~ 0
 SafeDrive
 Text GLabel 6330 3350 2    50   BiDi ~ 0
-TankDrive
+SW1
 Text GLabel 6330 3500 2    50   BiDi ~ 0
-SafeDrive
+SW2
 Wire Wire Line
 	6330 3350 6200 3350
 Wire Wire Line
@@ -1042,9 +1042,9 @@ Wire Wire Line
 NoConn ~ 4700 3650
 NoConn ~ 4700 3800
 Text GLabel 10620 2320 3    50   Input ~ 0
-SW2
+TankDrive
 Text GLabel 10720 2320 3    50   Input ~ 0
-SW1
+SafeDrive
 Wire Wire Line
 	10620 2320 10620 2120
 Wire Wire Line
@@ -1052,10 +1052,10 @@ Wire Wire Line
 Wire Wire Line
 	7840 3520 7930 3520
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5DCF454E
 P 6940 3050
-F 0 "#PWR?" H 6940 2800 50  0001 C CNN
+F 0 "#PWR0105" H 6940 2800 50  0001 C CNN
 F 1 "GND" H 6945 2877 50  0000 C CNN
 F 2 "" H 6940 3050 50  0001 C CNN
 F 3 "" H 6940 3050 50  0001 C CNN
@@ -1078,10 +1078,10 @@ Wire Wire Line
 Text GLabel 9170 3210 2    50   Output ~ 0
 SW2
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 5DD6CAA4
 P 8190 3000
-F 0 "#PWR?" H 8190 2750 50  0001 C CNN
+F 0 "#PWR0106" H 8190 2750 50  0001 C CNN
 F 1 "GND" H 8195 2827 50  0000 C CNN
 F 2 "" H 8190 3000 50  0001 C CNN
 F 3 "" H 8190 3000 50  0001 C CNN
