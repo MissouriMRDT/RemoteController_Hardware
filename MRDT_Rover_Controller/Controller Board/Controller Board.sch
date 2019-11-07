@@ -501,9 +501,9 @@ TankDrive
 Text GLabel 10100 3540 0    50   BiDi ~ 0
 SafeDrive
 Text GLabel 6330 3350 2    50   BiDi ~ 0
-TankDrive
+SW2
 Text GLabel 6330 3500 2    50   BiDi ~ 0
-SafeDrive
+SW1
 Wire Wire Line
 	6330 3350 6200 3350
 Wire Wire Line
@@ -1042,9 +1042,9 @@ Wire Wire Line
 NoConn ~ 4700 3650
 NoConn ~ 4700 3800
 Text GLabel 10620 2320 3    50   Input ~ 0
-SW2
+TankDrive
 Text GLabel 10720 2320 3    50   Input ~ 0
-SW1
+SafeDrive
 Wire Wire Line
 	10620 2320 10620 2120
 Wire Wire Line
