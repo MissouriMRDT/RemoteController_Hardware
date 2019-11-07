@@ -710,42 +710,16 @@ Wire Wire Line
 $Comp
 L Device:R R9
 U 1 1 5DAEE33F
-P 7130 3250
-F 0 "R9" V 6990 3250 50  0000 C CNN
-F 1 "10K" V 7050 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7060 3250 50  0001 C CNN
-F 3 "~" H 7130 3250 50  0001 C CNN
-	1    7130 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5DAF5DE0
-P 8510 3200
-F 0 "R10" V 8370 3200 50  0000 C CNN
-F 1 "10K" V 8430 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8440 3200 50  0001 C CNN
-F 3 "~" H 8510 3200 50  0001 C CNN
-	1    8510 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5DAF6F36
-P 8510 3620
-F 0 "R12" V 8370 3620 50  0000 C CNN
-F 1 "10K" V 8430 3620 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8440 3620 50  0001 C CNN
-F 3 "~" H 8510 3620 50  0001 C CNN
-	1    8510 3620
+P 7110 3250
+F 0 "R9" V 6970 3250 50  0000 C CNN
+F 1 "10K" V 7030 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7040 3250 50  0001 C CNN
+F 3 "~" H 7110 3250 50  0001 C CNN
+	1    7110 3250
 	0    1    1    0   
 $EndComp
 Text Notes 6870 4040 0    59   ~ 12
 Push Buttons
-Wire Wire Line
-	7450 3050 7250 3050
-Wire Wire Line
-	7250 3050 7250 3010
 $Comp
 L dk_Tactile-Switches:1825910-6 S4
 U 1 1 5DB41957
@@ -790,77 +764,61 @@ F 12 "Active" H 7840 4620 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7840 3320
-Wire Wire Line
-	7250 3320 7250 3050
-Connection ~ 7250 3050
 $Comp
 L Device:R R11
 U 1 1 5DC358FD
-P 7140 3520
-F 0 "R11" V 6990 3520 50  0000 C CNN
-F 1 "10K" V 7060 3520 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7070 3520 50  0001 C CNN
-F 3 "~" H 7140 3520 50  0001 C CNN
-	1    7140 3520
+P 7120 3520
+F 0 "R11" V 6970 3520 50  0000 C CNN
+F 1 "10K" V 7040 3520 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7050 3520 50  0001 C CNN
+F 3 "~" H 7120 3520 50  0001 C CNN
+	1    7120 3520
 	0    1    1    0   
 $EndComp
-Text GLabel 9350 3620 2    50   Output ~ 0
+Text GLabel 9340 3520 2    50   Output ~ 0
 SW3
 $Comp
 L dk_Tactile-Switches:1825910-6 S2
 U 1 1 5DC7615D
-P 9020 3100
-F 0 "S2" H 9030 3390 60  0000 C CNN
-F 1 "1825910-6" H 9040 3300 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 9220 3300 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 3400 60  0001 L CNN
-F 4 "450-1650-ND" H 9220 3500 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 9220 3600 60  0001 L CNN "MPN"
-F 6 "Switches" H 9220 3700 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 9220 3800 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 3900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 9220 4000 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 9220 4100 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 9220 4200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9220 4300 60  0001 L CNN "Status"
-	1    9020 3100
+P 9020 3120
+F 0 "S2" H 9030 3410 60  0000 C CNN
+F 1 "1825910-6" H 9040 3320 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 9220 3320 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 3420 60  0001 L CNN
+F 4 "450-1650-ND" H 9220 3520 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 9220 3620 60  0001 L CNN "MPN"
+F 6 "Switches" H 9220 3720 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 9220 3820 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 3920 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 9220 4020 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 9220 4120 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 9220 4220 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9220 4320 60  0001 L CNN "Status"
+	1    9020 3120
 	1    0    0    -1  
 $EndComp
 $Comp
 L dk_Tactile-Switches:1825910-6 S3
 U 1 1 5DC78DCF
-P 9020 3520
-F 0 "S3" H 9030 3260 60  0000 C CNN
-F 1 "1825910-6" H 9020 3350 60  0000 C CNN
-F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 9220 3720 60  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 3820 60  0001 L CNN
-F 4 "450-1650-ND" H 9220 3920 60  0001 L CNN "Digi-Key_PN"
-F 5 "1825910-6" H 9220 4020 60  0001 L CNN "MPN"
-F 6 "Switches" H 9220 4120 60  0001 L CNN "Category"
-F 7 "Tactile Switches" H 9220 4220 60  0001 L CNN "Family"
-F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 4320 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 9220 4420 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 9220 4520 60  0001 L CNN "Description"
-F 11 "TE Connectivity ALCOSWITCH Switches" H 9220 4620 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9220 4720 60  0001 L CNN "Status"
-	1    9020 3520
+P 9020 3420
+F 0 "S3" H 9030 3160 60  0000 C CNN
+F 1 "1825910-6" H 9020 3250 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_THT_6x6mm" H 9220 3620 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 3720 60  0001 L CNN
+F 4 "450-1650-ND" H 9220 3820 60  0001 L CNN "Digi-Key_PN"
+F 5 "1825910-6" H 9220 3920 60  0001 L CNN "MPN"
+F 6 "Switches" H 9220 4020 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 9220 4120 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 9220 4220 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" H 9220 4320 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 24V" H 9220 4420 60  0001 L CNN "Description"
+F 11 "TE Connectivity ALCOSWITCH Switches" H 9220 4520 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9220 4620 60  0001 L CNN "Status"
+	1    9020 3420
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9220 3420
 NoConn ~ 9220 3000
-Wire Wire Line
-	8680 3420 8820 3420
-Wire Wire Line
-	8680 2960 8680 3000
-Wire Wire Line
-	8820 3000 8680 3000
-Connection ~ 8680 3000
-Wire Wire Line
-	8680 3000 8680 3420
-Wire Wire Line
-	9220 3200 9340 3200
-Wire Wire Line
-	9350 3620 9220 3620
 Text GLabel 4610 3500 0    50   Input ~ 0
 SW4
 Text GLabel 2340 1500 2    50   Output ~ 0
@@ -889,9 +847,7 @@ Text GLabel 11100 1990 1    50   Input ~ 0
 5V
 Text GLabel 10010 3370 0    50   Input ~ 0
 5V
-Text GLabel 8680 2960 1    50   Input ~ 0
-5V
-Text GLabel 7250 3010 1    50   Input ~ 0
+Text GLabel 8260 3110 1    50   Input ~ 0
 5V
 Text GLabel 5300 4950 3    50   Input ~ 0
 5V
@@ -906,8 +862,6 @@ F 3 "" H 1950 1660 50  0001 C CNN
 	1    1950 1660
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7440 3320 7250 3320
 $Comp
 L dk_Slide-Switches:EG1218 SW1
 U 1 1 5DA15FC2
@@ -1043,52 +997,14 @@ Wire Wire Line
 	10720 2320 10720 2120
 Wire Wire Line
 	7840 3520 7930 3520
-$Comp
-L power:GND #PWR0105
-U 1 1 5DCF454E
-P 6940 3660
-F 0 "#PWR0105" H 6940 3410 50  0001 C CNN
-F 1 "GND" H 6945 3487 50  0000 C CNN
-F 2 "" H 6940 3660 50  0001 C CNN
-F 3 "" H 6940 3660 50  0001 C CNN
-	1    6940 3660
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6940 3250 6980 3250
+	6920 3250 6960 3250
 Wire Wire Line
-	6990 3520 6940 3520
+	6970 3520 6920 3520
 Wire Wire Line
-	6940 3520 6940 3250
-Wire Wire Line
-	7450 3250 7280 3250
-Wire Wire Line
-	7440 3520 7290 3520
-Text GLabel 9340 3200 2    50   Output ~ 0
+	6920 3520 6920 3250
+Text GLabel 9350 3220 2    50   Output ~ 0
 SW2
-Wire Wire Line
-	8360 3200 8270 3200
-Wire Wire Line
-	8360 3620 8270 3620
-Wire Wire Line
-	8270 3200 8270 3620
-Wire Wire Line
-	6940 3520 6940 3660
-Connection ~ 6940 3520
-$Comp
-L power:GND #PWR0106
-U 1 1 5DD6CAA4
-P 8270 3650
-F 0 "#PWR0106" H 8270 3400 50  0001 C CNN
-F 1 "GND" H 8275 3477 50  0000 C CNN
-F 2 "" H 8270 3650 50  0001 C CNN
-F 3 "" H 8270 3650 50  0001 C CNN
-	1    8270 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8270 3650 8270 3620
-Connection ~ 8270 3620
 Wire Notes Line
 	6850 4070 11200 4070
 Wire Notes Line
@@ -1097,8 +1013,88 @@ Wire Notes Line
 	6850 500  6850 4070
 Wire Notes Line
 	9590 2760 9590 4080
+Text GLabel 6920 3130 1    50   Input ~ 0
+5V
 Wire Wire Line
-	8660 3200 8820 3200
+	6920 3130 6920 3250
+Connection ~ 6920 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5DD30C10
+P 7320 3710
+F 0 "#PWR?" H 7320 3460 50  0001 C CNN
+F 1 "GND" H 7325 3537 50  0000 C CNN
+F 2 "" H 7320 3710 50  0001 C CNN
+F 3 "" H 7320 3710 50  0001 C CNN
+	1    7320 3710
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8660 3620 8820 3620
+	7260 3250 7450 3250
+Wire Wire Line
+	7270 3520 7440 3520
+Wire Wire Line
+	7320 3710 7320 3320
+Wire Wire Line
+	7320 3320 7440 3320
+Wire Wire Line
+	7450 3050 7320 3050
+Wire Wire Line
+	7320 3050 7320 3320
+Connection ~ 7320 3320
+$Comp
+L Device:R R12
+U 1 1 5DAF6F36
+P 8480 3520
+F 0 "R12" V 8340 3520 50  0000 C CNN
+F 1 "10K" V 8400 3520 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8410 3520 50  0001 C CNN
+F 3 "~" H 8480 3520 50  0001 C CNN
+	1    8480 3520
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5DAF5DE0
+P 8480 3220
+F 0 "R10" V 8340 3220 50  0000 C CNN
+F 1 "10K" V 8400 3220 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8410 3220 50  0001 C CNN
+F 3 "~" H 8480 3220 50  0001 C CNN
+	1    8480 3220
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8330 3220 8260 3220
+Wire Wire Line
+	8260 3110 8260 3220
+Wire Wire Line
+	8330 3520 8260 3520
+Wire Wire Line
+	8260 3520 8260 3220
+Connection ~ 8260 3220
+Wire Wire Line
+	8630 3220 8820 3220
+Wire Wire Line
+	8630 3520 8820 3520
+$Comp
+L power:GND #PWR?
+U 1 1 5DE23CEA
+P 8710 3680
+F 0 "#PWR?" H 8710 3430 50  0001 C CNN
+F 1 "GND" H 8715 3507 50  0000 C CNN
+F 2 "" H 8710 3680 50  0001 C CNN
+F 3 "" H 8710 3680 50  0001 C CNN
+	1    8710 3680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8710 3680 8710 3320
+Wire Wire Line
+	8710 3320 8820 3320
+Wire Wire Line
+	8820 3020 8710 3020
+Wire Wire Line
+	8710 3020 8710 3320
+Connection ~ 8710 3320
 $EndSCHEMATC
