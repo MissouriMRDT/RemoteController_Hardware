@@ -6,6 +6,8 @@
 MCP3008 adc(D5, D7, D6, D8);
 int lcdColumns = 16;
 int lcdRows = 2;
+int SD3 = 10;
+int SD2 = 9;
 LiquidCrystal_I2C lcd(0x20,2,1,0,4,5,6,7,3,POSITIVE);
 
 void setup() {
@@ -16,6 +18,8 @@ void setup() {
   pinMode(D3,INPUT);
   pinMode(D6,INPUT);
   pinMode(D4,INPUT);
+  pinMode(SD2,INPUT);
+  pinMode(SD3,INPUT);
   lcd.setCursor(0,0);
   lcd.print("   Mars Rover   ");
   lcd.setCursor(0,1);
@@ -36,7 +40,7 @@ void loop() {
   lcd.print("X-Value: " + String(adc.readADC(1)));
   delay(200);
   lcd.clear();
-  if(((adc.readADC(5)) < 100)||(digitalRead(D3) == HIGH))
+  if(((adc.readADC(5)) < 100)||(digitalRead(D3) == LOW) || (digitalRead(D4) == LOW) || (digitalRead(9) == LOW) || (digitalRead(10) == LOW))
     digitalWrite(D0,HIGH);
 
   else
