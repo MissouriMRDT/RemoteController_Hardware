@@ -9,3 +9,10 @@ ADC which currently has two open ports.
 The RX and TX ports, which are also labeled as GPIO, will cause prevent the esp from booting if they are driven HIGH at any
 time during the load process, thus these pins are not recommended. 
 Only current option is to use the the two open points on the MCP3008 ADC
+
+
+
+
+
+REV 2 could benefit from a change to the ESP-32 as it has enough built-in ADC pins to get rid of the MCP3008 IC,
+additionally, the ADC is 12-bit and will allow for better reading precision from the joysticks. 
