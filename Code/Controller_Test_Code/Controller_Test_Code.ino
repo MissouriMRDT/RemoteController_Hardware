@@ -31,15 +31,14 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   Serial.println("--------------------------");
-  //Serial.println("Y-Value:" + String(adc.readADC(0)));
-  //Serial.println("X-Value:" + String(adc.readADC(1)));
- // Serial.println("Select:" + String(adc.readADC(5)));
+  Serial.println("Y-Value:" + String(adc.readADC(0)));
+  Serial.println("X-Value:" + String(adc.readADC(1)));
+  Serial.println("Select:" + String(adc.readADC(5)));
   lcd.setCursor(0,0);
-  lcd.print("Y-Value: " + String(adc.readADC(0)));
+  lcd.print("Y-Value: " + String(adc.readADC(0))+ "   ");
   lcd.setCursor(0,1);
-  lcd.print("X-Value: " + String(adc.readADC(1)));
-  delay(200);
-  lcd.clear();
+  lcd.print("X-Value: " + String(adc.readADC(1))+ "   ");
+  delay(100);
   if(((adc.readADC(5)) < 100)||(digitalRead(D3) == LOW) || (digitalRead(D4) == LOW) || (digitalRead(9) == LOW) || (digitalRead(10) == LOW))
     digitalWrite(D0,HIGH);
 
@@ -47,4 +46,11 @@ void loop() {
     digitalWrite(D0,LOW);
     
   Serial.println("Button:" + String(digitalRead(D3)));
+  if(digitalRead(D3) == LOW)
+    {
+      lcd.clear();
+      lcd.print("D3 Button On");
+      delay(2000);
+    }
+    
 }
