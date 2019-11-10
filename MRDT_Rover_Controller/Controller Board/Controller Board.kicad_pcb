@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.381)
+    (last_trace_width 0.25)
     (user_trace_width 0.381)
     (user_trace_width 15)
     (user_trace_width 30)
@@ -241,7 +241,7 @@
   )
 
   (module MRDT_Silkscreens:0_MRDT_Logo_10mm (layer F.Cu) (tedit 5AA4CEEB) (tstamp 5DC47B05)
-    (at 92.6084 127.4572)
+    (at 92.6592 127.4064)
     (tags "Logo, MRDT")
     (fp_text reference G*** (at -1.143 6.4008) (layer Dwgs.User) hide
       (effects (font (size 0.2 0.2) (thickness 0.05)))
