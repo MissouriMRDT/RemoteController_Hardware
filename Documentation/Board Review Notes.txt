@@ -1,0 +1,53 @@
+Create libraries folder that has most files
+Hardware folder for just hardware
+folder for documentation (Transfer stuff to text file, not Word)
+
+Raname all files to same name (too many names for board, have it all named one thing).
+
+Have all library files in one folder
+
+Re-do schematic using grid of 50 mil
+
+change battery symbol, but keep same footprint (same for 7805, switches, potentiometer)
+
+change resisitors going to LEDs as 510 ohms
+
+change LEDs to the two pin standard LEDs (0603)
+
+Don't connect GND pins directily to pins of componenets, make sure there is a wire in-between them. 
+
+Show that K is for the backlight
+
+Show that potentiometer is 10 K
+
+Make k and P3 flags
+
+Make sure flags represent whether they are inputs or outputs and not bidirectional
+
+Standardize the names of the flags for the joysticks
+
+Change pushbuttons from the through-hole to the SMD ones that are standard for Mars Rover
+
+change pushbuttons to a 2-pin smd button where 5V is connected with a 10K resistor to the button, pressing the button connects to GND
+
+Make both TankDrive and SafeDrive connected to Pulled-down to GND with a 10K resistor then given 5V when connected
+
+Make resistors R7 and R8 10K 
+
+Make jumper on PCB horizontal, and increase 
+
+Make a GND plane on the PCB, and then the GND traces can be removed. 
+
+Also add a 5V plane that will allow for the 5V traces to be removed
+
+Via's cannot be placed on pads, so move them off of the pad then connect to the via
+
+Run all traces on 10mil grid
+
+Try not to use longer diagonal traces, make longer straight traces
+
+Standardize the name of the board on the PCB to match the standardized name in the repository
+
+Put red LED for TankDrive to indicate that it is on
+
+for Rev2 bring BOM (Bill of Material)
