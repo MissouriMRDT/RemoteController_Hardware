@@ -1097,4 +1097,8 @@ Wire Wire Line
 Wire Wire Line
 	8710 3020 8710 3320
 Connection ~ 8710 3320
+Wire Wire Line
+	9350 3220 9220 3220
+Wire Wire Line
+	9220 3520 9340 3520
 $EndSCHEMATC
