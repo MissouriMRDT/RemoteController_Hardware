@@ -14,235 +14,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Display_Character:RC1602A 16x2_LCD1
-U 1 1 5D8EDD80
-P 8780 5430
-F 0 "16x2_LCD1" H 8780 6311 50  0000 C CNN
-F 1 "RC1602A" H 8780 6220 50  0000 C CNN
-F 2 "Display:WC1602A" H 8880 4630 50  0001 C CNN
-F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 8880 5330 50  0001 C CNN
-	1    8780 5430
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5D912FAB
-P 7460 6170
-F 0 "#PWR0102" H 7460 5920 50  0001 C CNN
-F 1 "GND" H 7465 5997 50  0000 C CNN
-F 2 "" H 7460 6170 50  0001 C CNN
-F 3 "" H 7460 6170 50  0001 C CNN
-	1    7460 6170
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5D918DEA
-P 6730 5730
-F 0 "#PWR0103" H 6730 5480 50  0001 C CNN
-F 1 "GND" H 6735 5557 50  0000 C CNN
-F 2 "" H 6730 5730 50  0001 C CNN
-F 3 "" H 6730 5730 50  0001 C CNN
-	1    6730 5730
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6730 5370 6730 5470
-$Comp
-L Interface_Expansion:PCF8574 I2C_Bus1
-U 1 1 5D8EA9E2
-P 7460 5470
-F 0 "I2C_Bus1" H 7730 6270 50  0000 C CNN
-F 1 "PCF8574" H 7770 6200 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 7460 5470 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 7460 5470 50  0001 C CNN
-	1    7460 5470
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6960 5370 6730 5370
-Wire Wire Line
-	6960 5470 6730 5470
-Connection ~ 6730 5470
-Wire Wire Line
-	6730 5470 6730 5570
-Wire Wire Line
-	6960 5570 6730 5570
-Connection ~ 6730 5570
-Wire Wire Line
-	6730 5570 6730 5730
-Wire Wire Line
-	7960 5470 8210 5470
-Wire Wire Line
-	8210 5470 8210 5630
-Wire Wire Line
-	8210 5630 8380 5630
-Wire Wire Line
-	8170 5570 8170 5730
-Wire Wire Line
-	8170 5730 8380 5730
-Wire Wire Line
-	8170 5570 7960 5570
-Wire Wire Line
-	7960 5670 8130 5670
-Wire Wire Line
-	8130 5670 8130 5830
-Wire Wire Line
-	8130 5830 8380 5830
-Wire Wire Line
-	7960 5770 8090 5770
-Wire Wire Line
-	8090 5770 8090 5930
-Wire Wire Line
-	8090 5930 8380 5930
-Wire Wire Line
-	7960 5070 8130 5070
-Wire Wire Line
-	8130 5070 8130 4930
-Wire Wire Line
-	8130 4930 8380 4930
-Wire Wire Line
-	7960 5170 8180 5170
-Wire Wire Line
-	8180 5170 8180 5030
-Wire Wire Line
-	8180 5030 8380 5030
-Wire Wire Line
-	7960 5270 8230 5270
-Wire Wire Line
-	8230 5270 8230 5130
-Wire Wire Line
-	8230 5130 8380 5130
-$Comp
-L Transistor_BJT:S8050 Q1
-U 1 1 5D92037F
-P 10020 5720
-F 0 "Q1" H 10210 5766 50  0000 L CNN
-F 1 "S8050" H 10210 5675 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10220 5645 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 10020 5720 50  0001 L CNN
-	1    10020 5720
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9820 5720 9790 5720
-$Comp
-L Device:R R1
-U 1 1 5D927B58
-P 9790 5490
-F 0 "R1" H 9860 5536 50  0000 L CNN
-F 1 "4.7K" H 9860 5445 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9720 5490 50  0001 C CNN
-F 3 "~" H 9790 5490 50  0001 C CNN
-	1    9790 5490
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9790 5200 9790 5340
-Wire Wire Line
-	9790 5640 9790 5720
-Connection ~ 9790 5720
-Wire Wire Line
-	9790 5720 9650 5720
-$Comp
-L power:GND #PWR0104
-U 1 1 5D929AA1
-P 10120 5990
-F 0 "#PWR0104" H 10120 5740 50  0001 C CNN
-F 1 "GND" H 10125 5817 50  0000 C CNN
-F 2 "" H 10120 5990 50  0001 C CNN
-F 3 "" H 10120 5990 50  0001 C CNN
-	1    10120 5990
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10120 5920 10120 5990
-Text Label 9650 5720 0    50   ~ 0
-P3
-Text Label 8100 5370 0    50   ~ 0
-P3
-Text Label 10200 5420 0    50   ~ 0
-k
-Wire Wire Line
-	10120 5520 10120 5420
-Wire Wire Line
-	10120 5420 10200 5420
-Text Label 9290 5630 0    50   ~ 0
-k
-Wire Wire Line
-	9180 5630 9290 5630
-Wire Wire Line
-	7960 5370 8100 5370
-$Comp
-L Device:R R3
-U 1 1 5D8FC35A
-P 6870 4690
-F 0 "R3" H 6920 4770 50  0000 L CNN
-F 1 "4.7K" H 6920 4700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6800 4690 50  0001 C CNN
-F 3 "~" H 6870 4690 50  0001 C CNN
-	1    6870 4690
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5D8FCB98
-P 6770 4740
-F 0 "R2" H 6570 4730 50  0000 L CNN
-F 1 "4.7K" H 6560 4660 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6700 4740 50  0001 C CNN
-F 3 "~" H 6770 4740 50  0001 C CNN
-	1    6770 4740
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6640 4480 6770 4480
-Wire Wire Line
-	6870 4540 6870 4480
-Connection ~ 6870 4480
-Wire Wire Line
-	6770 4590 6770 4480
-Connection ~ 6770 4480
-Wire Wire Line
-	6770 4480 6870 4480
-Wire Wire Line
-	7460 4480 7460 4770
-Wire Wire Line
-	6870 4480 7460 4480
-Wire Wire Line
-	6670 5070 6870 5070
-Wire Wire Line
-	6670 5170 6770 5170
-Wire Wire Line
-	6770 4890 6770 5170
-Connection ~ 6770 5170
-Wire Wire Line
-	6770 5170 6960 5170
-Wire Wire Line
-	6870 4840 6870 5070
-Connection ~ 6870 5070
-Wire Wire Line
-	6870 5070 6960 5070
 Wire Wire Line
 	5470 3500 5350 3500
 Wire Wire Line
 	5350 3650 5470 3650
-Wire Wire Line
-	9260 5730 9180 5730
-$Comp
-L power:GND #PWR0109
-U 1 1 5D91AF70
-P 8780 6130
-F 0 "#PWR0109" H 8780 5880 50  0001 C CNN
-F 1 "GND" H 8785 5957 50  0000 C CNN
-F 2 "" H 8780 6130 50  0001 C CNN
-F 3 "" H 8780 6130 50  0001 C CNN
-	1    8780 6130
-	1    0    0    -1  
-$EndComp
-Text Notes 2860 3090 0    59   ~ 12
-I2C_16X2_LCD
 $Comp
 L power:GND #PWR0113
 U 1 1 5D943E61
@@ -254,10 +29,6 @@ F 3 "" H 4300 5400 50  0001 C CNN
 	1    4300 5400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8380 5230
-NoConn ~ 8380 5330
-NoConn ~ 8380 5430
-NoConn ~ 8380 5530
 $Comp
 L JOYSTICK:JOYSTICK Left_Joystick1
 U 1 1 5D94E007
@@ -348,10 +119,6 @@ Wire Wire Line
 Connection ~ 8790 1680
 Wire Wire Line
 	8790 1680 8790 1980
-Text GLabel 6670 5070 0    50   BiDi ~ 0
-SCL
-Text GLabel 6670 5170 0    50   BiDi ~ 0
-SDA
 Text GLabel 5470 3500 2    50   BiDi ~ 0
 SCL
 Text GLabel 5470 3650 2    50   BiDi ~ 0
@@ -501,42 +268,6 @@ Wire Wire Line
 Text Notes 9600 4050 0    59   ~ 12
 Drive Mode Jumper
 $Comp
-L Trimmer_POT_3362:3362P-1-103LF R4
-U 1 1 5D9EE8A7
-P 10450 4670
-F 0 "R4" H 10850 4432 60  0000 C CNN
-F 1 "3362P-1-103F" H 10850 4538 60  0000 C CNN
-F 2 "Trimmer_POT_3326:3362P-1-103LF" H 10875 4235 60  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/3362.pdf" H 10850 4538 60  0001 C CNN
-	1    10450 4670
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9650 4670 9520 4670
-$Comp
-L power:GND #PWR0122
-U 1 1 5DA16259
-P 10910 4890
-F 0 "#PWR0122" H 10910 4640 50  0001 C CNN
-F 1 "GND" H 10915 4717 50  0000 C CNN
-F 2 "" H 10910 4890 50  0001 C CNN
-F 3 "" H 10910 4890 50  0001 C CNN
-	1    10910 4890
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10910 4890 10910 4820
-Wire Wire Line
-	10910 4820 10900 4820
-Text GLabel 9220 5230 2    50   BiDi ~ 0
-V0
-Text GLabel 10050 5040 3    50   BiDi ~ 0
-V0
-Wire Wire Line
-	10050 5040 10050 4970
-Wire Wire Line
-	9220 5230 9180 5230
-$Comp
 L Rover_Controller:ESP8266_NodeMCU ESP-12E1
 U 1 1 5D86DCF0
 P 4600 3200
@@ -547,15 +278,10 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20
 	1    4600 3200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6960 5870
 Text GLabel 5470 3350 2    50   Output ~ 0
 D0
 Wire Wire Line
 	5470 3350 5350 3350
-Wire Wire Line
-	8940 4720 8780 4720
-Wire Wire Line
-	8780 4720 8780 4730
 $Comp
 L Device:R R7
 U 1 1 5DA03F0A
@@ -723,16 +449,6 @@ NoConn ~ 9220 3420
 NoConn ~ 9220 3000
 Text GLabel 3760 3950 0    50   Input ~ 0
 SW4
-Text GLabel 6640 4480 0    50   Input ~ 0
-5V
-Text GLabel 9790 5200 1    50   Input ~ 0
-5V
-Text GLabel 9520 4670 1    50   Input ~ 0
-5V
-Text GLabel 8940 4720 2    50   Input ~ 0
-5V
-Text GLabel 9260 5730 2    50   Input ~ 0
-5V
 Text GLabel 7400 1000 1    50   Input ~ 0
 5V
 Text GLabel 8720 990  1    50   Input ~ 0
@@ -884,7 +600,7 @@ U 1 1 5DCD7CBE
 P 600 1350
 F 0 "BT1" H 718 1446 50  0000 L CNN
 F 1 "9V_BAT" H 718 1355 50  0000 L CNN
-F 2 "" V 600 1410 50  0001 C CNN
+F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" V 600 1410 50  0001 C CNN
 F 3 "~" V 600 1410 50  0001 C CNN
 	1    600  1350
 	1    0    0    -1  
@@ -917,7 +633,7 @@ U 1 1 5DD00F90
 P 1700 950
 F 0 "5V_Reg_1" H 1700 1192 50  0000 C CNN
 F 1 "L7805" H 1700 1101 50  0000 C CNN
-F 2 "" H 1725 800 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown" H 1725 800 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1700 900 50  0001 C CNN
 	1    1700 950 
 	1    0    0    -1  
@@ -1062,8 +778,6 @@ Wire Notes Line
 Wire Notes Line
 	500  500  500  3800
 Wire Notes Line
-	2550 500  2550 3800
-Wire Notes Line
 	500  2000 2550 2000
 Text Notes 1150 1950 0    50   ~ 10
 LED Indicators
@@ -1126,8 +840,6 @@ F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 5200 1650 50  0001 C 
 	1    5100 1750
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	6850 500  6850 2750
 Wire Notes Line
 	500  500  6850 500 
 Wire Notes Line
@@ -1347,4 +1059,58 @@ Wire Wire Line
 	5600 2050 5500 2050
 Text Notes 5550 1900 0    31   ~ 0
 Backlight
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5E01E4CC
+P 6200 950
+F 0 "RV1" V 5993 950 50  0000 C CNN
+F 1 "R_POT_TRIM_10K" V 6084 950 50  0000 C CNN
+F 2 "3362_Trimmer_Pot:3362P-1-103LF" H 6200 950 50  0001 C CNN
+F 3 "~" H 6200 950 50  0001 C CNN
+	1    6200 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 950  5800 950 
+$Comp
+L power:GND #PWR?
+U 1 1 5E02E652
+P 6500 1200
+F 0 "#PWR?" H 6500 950 50  0001 C CNN
+F 1 "GND" H 6505 1027 50  0000 C CNN
+F 2 "" H 6500 1200 50  0001 C CNN
+F 3 "" H 6500 1200 50  0001 C CNN
+	1    6500 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 850  1    50   Output ~ 0
+5V
+Wire Wire Line
+	5800 850  5800 950 
+Wire Wire Line
+	6500 1200 6500 950 
+Wire Wire Line
+	6500 950  6350 950 
+Text GLabel 6200 1200 3    50   Input ~ 0
+V0
+Wire Wire Line
+	6200 1200 6200 1100
+Text GLabel 5600 1550 2    50   Output ~ 0
+V0
+Wire Wire Line
+	5600 1550 5500 1550
+NoConn ~ 4700 1850
+NoConn ~ 4700 1750
+NoConn ~ 4700 1650
+NoConn ~ 4700 1550
+Wire Notes Line
+	6850 5800 2550 5800
+Wire Notes Line
+	2550 500  2550 5800
+Wire Notes Line
+	6850 500  6850 5800
+Wire Notes Line
+	2550 2900 6850 2900
+Text Notes 4100 2900 0    50   ~ 10
+ESP8266-12E nodeMCU V1.0
 $EndSCHEMATC
