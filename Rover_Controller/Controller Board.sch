@@ -558,78 +558,6 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3260 2020
-$Comp
-L Device:R R5
-U 1 1 5D9DA747
-P 1130 2660
-F 0 "R5" H 1200 2706 50  0000 L CNN
-F 1 "100" H 1200 2615 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1060 2660 50  0001 C CNN
-F 3 "~" H 1130 2660 50  0001 C CNN
-	1    1130 2660
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5D9DEC63
-P 1930 2670
-F 0 "R6" H 2000 2716 50  0000 L CNN
-F 1 "100" H 2000 2625 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1860 2670 50  0001 C CNN
-F 3 "~" H 1930 2670 50  0001 C CNN
-	1    1930 2670
-	1    0    0    -1  
-$EndComp
-$Comp
-L MRDT_Actives:LED3P PWR1
-U 1 1 5D9FE86E
-P 1130 3090
-F 0 "PWR1" V 1277 3319 60  0000 L CNN
-F 1 "GREEN" V 1383 3319 60  0000 L CNN
-F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 1330 3440 60  0001 C CNN
-F 3 "" H 1130 3090 60  0000 C CNN
-	1    1130 3090
-	0    1    1    0   
-$EndComp
-$Comp
-L MRDT_Actives:LED3P COM1
-U 1 1 5DA02666
-P 1930 3080
-F 0 "COM1" V 2077 3308 60  0000 L CNN
-F 1 "BLUE" V 2183 3308 60  0000 L CNN
-F 2 "MRDT_Actives:LED_CREE_XLAMP_XPG" H 2130 3430 60  0001 C CNN
-F 3 "" H 1930 3080 60  0000 C CNN
-	1    1930 3080
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1930 2520 1930 2420
-Wire Wire Line
-	1130 3090 1130 2810
-Wire Wire Line
-	1930 3080 1930 2820
-$Comp
-L power:GND #PWR0124
-U 1 1 5DA1C557
-P 1130 3550
-F 0 "#PWR0124" H 1130 3300 50  0001 C CNN
-F 1 "GND" H 1135 3377 50  0000 C CNN
-F 2 "" H 1130 3550 50  0001 C CNN
-F 3 "" H 1130 3550 50  0001 C CNN
-	1    1130 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5DA1DF2B
-P 1930 3540
-F 0 "#PWR0125" H 1930 3290 50  0001 C CNN
-F 1 "GND" H 1935 3367 50  0000 C CNN
-F 2 "" H 1930 3540 50  0001 C CNN
-F 3 "" H 1930 3540 50  0001 C CNN
-	1    1930 3540
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	500  500  500  3860
 Wire Notes Line
@@ -638,14 +566,6 @@ Wire Notes Line
 	500  3860 2500 3860
 Text Notes 510  3850 0    59   ~ 12
 LED Indicators
-Wire Wire Line
-	1130 3550 1130 3490
-Wire Wire Line
-	1930 3540 1930 3480
-Wire Wire Line
-	1130 2370 1130 2510
-Text GLabel 1930 2420 1    50   Input ~ 0
-D0
 Text GLabel 6320 2900 2    50   Output ~ 0
 D0
 Wire Wire Line
@@ -821,10 +741,6 @@ NoConn ~ 9220 3420
 NoConn ~ 9220 3000
 Text GLabel 4610 3500 0    50   Input ~ 0
 SW4
-Text GLabel 2340 1500 2    50   Output ~ 0
-5V
-Text GLabel 1130 2370 1    50   Input ~ 0
-5V
 Text GLabel 2940 630  0    50   Input ~ 0
 5V
 Text GLabel 6090 1350 1    50   Input ~ 0
@@ -851,64 +767,6 @@ Text GLabel 8260 3110 1    50   Input ~ 0
 5V
 Text GLabel 5300 4950 3    50   Input ~ 0
 5V
-$Comp
-L power:GND #PWR0101
-U 1 1 5DDD60BD
-P 1950 1660
-F 0 "#PWR0101" H 1950 1410 50  0001 C CNN
-F 1 "GND" H 1955 1487 50  0000 C CNN
-F 2 "" H 1950 1660 50  0001 C CNN
-F 3 "" H 1950 1660 50  0001 C CNN
-	1    1950 1660
-	1    0    0    -1  
-$EndComp
-$Comp
-L dk_Slide-Switches:EG1218 SW1
-U 1 1 5DA15FC2
-P 1150 1000
-F 0 "SW1" H 1150 1281 50  0000 C CNN
-F 1 "EG1218" H 1150 1190 50  0000 C CNN
-F 2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" H 1350 1200 50  0001 L CNN
-F 3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 1350 1300 60  0001 L CNN
-F 4 "EG1903-ND" H 1350 1400 60  0001 L CNN "Digi-Key_PN"
-F 5 "EG1218" H 1350 1500 60  0001 L CNN "MPN"
-F 6 "Switches" H 1350 1600 60  0001 L CNN "Category"
-F 7 "Slide Switches" H 1350 1700 60  0001 L CNN "Family"
-F 8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 1350 1800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 1350 1900 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH SLIDE SPDT 200MA 30V" H 1350 2000 60  0001 L CNN "Description"
-F 11 "E-Switch" H 1350 2100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1350 2200 60  0001 L CNN "Status"
-	1    1150 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	840  1000 950  1000
-NoConn ~ 1350 1100
-$Comp
-L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
-U 1 1 5DD0C8AF
-P 680 1200
-F 0 "BAT1" V 240 1080 60  0000 L CNN
-F 1 "BC9VPC" V 330 1080 60  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 880 1400 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 1500 60  0001 L CNN
-F 4 "BC9VPC-ND" H 880 1600 60  0001 L CNN "Digi-Key_PN"
-F 5 "BC9VPC" H 880 1700 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 880 1800 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 880 1900 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 880 2000 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 880 2100 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER 9V PC PIN" H 880 2200 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 880 2300 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 880 2400 60  0001 L CNN "Status"
-	1    680  1200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	840  1000 840  900 
-Wire Wire Line
-	840  900  680  900 
 NoConn ~ 6200 3650
 NoConn ~ 6200 3800
 NoConn ~ 6200 4550
@@ -924,67 +782,6 @@ NoConn ~ 4700 3950
 NoConn ~ 4700 3200
 NoConn ~ 4700 3050
 NoConn ~ 4700 2900
-$Comp
-L Regulator_Linear:L7805 5V_Regulator1
-U 1 1 5D8418B6
-P 1950 900
-F 0 "5V_Regulator1" H 1950 1142 50  0000 C CNN
-F 1 "L7805" H 1950 1051 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1975 750 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1950 850 50  0001 C CNN
-	1    1950 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 900  2300 900 
-Wire Wire Line
-	2300 900  2300 1500
-Connection ~ 2300 1500
-Wire Wire Line
-	2300 1500 2340 1500
-$Comp
-L Device:C C2
-U 1 1 5DC1FE51
-P 1500 1050
-F 0 "C2" H 1350 1170 50  0000 C CNN
-F 1 "1uF" H 1340 1090 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 900 50  0001 C CNN
-F 3 "~" H 1500 1050 50  0001 C CNN
-	1    1500 1050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	680  1500 1500 1500
-Wire Wire Line
-	1950 1500 1950 1660
-Connection ~ 1950 1500
-Wire Wire Line
-	1950 1500 1960 1500
-$Comp
-L Device:C C1
-U 1 1 5D843694
-P 2110 1500
-F 0 "C1" V 1858 1500 50  0000 C CNN
-F 1 "1uF" V 1949 1500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2148 1350 50  0001 C CNN
-F 3 "~" H 2110 1500 50  0001 C CNN
-	1    2110 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2260 1500 2300 1500
-Wire Wire Line
-	1500 900  1650 900 
-Wire Wire Line
-	1350 900  1500 900 
-Connection ~ 1500 900 
-Wire Wire Line
-	1500 1200 1500 1500
-Connection ~ 1500 1500
-Wire Wire Line
-	1500 1500 1950 1500
-Wire Wire Line
-	1950 1200 1950 1500
 NoConn ~ 4700 3650
 NoConn ~ 4700 3800
 Text GLabel 10620 2320 3    50   Input ~ 0
@@ -1097,4 +894,188 @@ Wire Wire Line
 Wire Wire Line
 	8710 3020 8710 3320
 Connection ~ 8710 3320
+Wire Wire Line
+	9350 3220 9220 3220
+Wire Wire Line
+	9220 3520 9340 3520
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5DCD7CBE
+P 600 1350
+F 0 "BT1" H 718 1446 50  0000 L CNN
+F 1 "9V_BAT" H 718 1355 50  0000 L CNN
+F 2 "" V 600 1410 50  0001 C CNN
+F 3 "~" V 600 1410 50  0001 C CNN
+	1    600  1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DCEDACE
+P 1300 1300
+F 0 "C1" H 1415 1346 50  0000 L CNN
+F 1 "1uF" H 1415 1255 50  0000 L CNN
+F 2 "" H 1338 1150 50  0001 C CNN
+F 3 "~" H 1300 1300 50  0001 C CNN
+	1    1300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DCF48E0
+P 2100 1300
+F 0 "C2" H 2215 1346 50  0000 L CNN
+F 1 "1uF" H 2215 1255 50  0000 L CNN
+F 2 "" H 2138 1150 50  0001 C CNN
+F 3 "~" H 2100 1300 50  0001 C CNN
+	1    2100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 5V_Reg_1
+U 1 1 5DD00F90
+P 1700 950
+F 0 "5V_Reg_1" H 1700 1192 50  0000 C CNN
+F 1 "L7805" H 1700 1101 50  0000 C CNN
+F 2 "" H 1725 800 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1700 900 50  0001 C CNN
+	1    1700 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5DD2E367
+P 950 950
+F 0 "SW1" H 950 1185 50  0000 C CNN
+F 1 "SW_SPST" H 950 1094 50  0000 C CNN
+F 2 "" H 950 950 50  0001 C CNN
+F 3 "~" H 950 950 50  0001 C CNN
+	1    950  950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  1150 600  950 
+Wire Wire Line
+	600  950  750  950 
+Wire Wire Line
+	1150 950  1300 950 
+Wire Wire Line
+	1300 1150 1300 950 
+Connection ~ 1300 950 
+Wire Wire Line
+	1300 950  1400 950 
+Wire Wire Line
+	2100 1150 2100 950 
+Wire Wire Line
+	2100 950  2000 950 
+$Comp
+L power:GND #PWR?
+U 1 1 5DD50153
+P 1700 1600
+F 0 "#PWR?" H 1700 1350 50  0001 C CNN
+F 1 "GND" H 1705 1427 50  0000 C CNN
+F 2 "" H 1700 1600 50  0001 C CNN
+F 3 "" H 1700 1600 50  0001 C CNN
+	1    1700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1600 1700 1550
+Wire Wire Line
+	2100 1450 2100 1550
+Wire Wire Line
+	2100 1550 1700 1550
+Connection ~ 1700 1550
+Wire Wire Line
+	1700 1550 1700 1250
+Wire Wire Line
+	1300 1450 1300 1550
+Wire Wire Line
+	1300 1550 1700 1550
+Wire Wire Line
+	600  1450 600  1550
+Wire Wire Line
+	600  1550 1300 1550
+Connection ~ 1300 1550
+Text GLabel 2300 950  2    50   Input ~ 0
+5V
+Wire Wire Line
+	2300 950  2100 950 
+Connection ~ 2100 950 
+Text GLabel 1000 2300 1    50   Output ~ 0
+5V
+Text GLabel 1600 2300 1    50   Output ~ 0
+D0
+$Comp
+L Device:R R4
+U 1 1 5DDC3D12
+P 1000 2650
+F 0 "R4" H 1070 2696 50  0000 L CNN
+F 1 "510" H 1070 2605 50  0000 L CNN
+F 2 "" V 930 2650 50  0001 C CNN
+F 3 "~" H 1000 2650 50  0001 C CNN
+	1    1000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5DDC452E
+P 1600 2650
+F 0 "R5" H 1670 2696 50  0000 L CNN
+F 1 "510" H 1670 2605 50  0000 L CNN
+F 2 "" V 1530 2650 50  0001 C CNN
+F 3 "~" H 1600 2650 50  0001 C CNN
+	1    1600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED PWR
+U 1 1 5DDC4F5B
+P 1000 3200
+F 0 "PWR" V 1039 3082 50  0000 R CNN
+F 1 "GREEN" V 948 3082 50  0000 R CNN
+F 2 "" H 1000 3200 50  0001 C CNN
+F 3 "~" H 1000 3200 50  0001 C CNN
+	1    1000 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED COM
+U 1 1 5DDC5490
+P 1600 3200
+F 0 "COM" V 1639 3083 50  0000 R CNN
+F 1 "BLUE" V 1548 3083 50  0000 R CNN
+F 2 "" H 1600 3200 50  0001 C CNN
+F 3 "~" H 1600 3200 50  0001 C CNN
+	1    1600 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDC631F
+P 1350 3550
+F 0 "#PWR?" H 1350 3300 50  0001 C CNN
+F 1 "GND" H 1355 3377 50  0000 C CNN
+F 2 "" H 1350 3550 50  0001 C CNN
+F 3 "" H 1350 3550 50  0001 C CNN
+	1    1350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3550 1000 3550
+Wire Wire Line
+	1000 3550 1000 3350
+Wire Wire Line
+	1350 3550 1600 3550
+Wire Wire Line
+	1600 3550 1600 3350
+Connection ~ 1350 3550
+Wire Wire Line
+	1000 3050 1000 2800
+Wire Wire Line
+	1600 3050 1600 2800
+Wire Wire Line
+	1000 2500 1000 2300
+Wire Wire Line
+	1600 2500 1600 2300
 $EndSCHEMATC
