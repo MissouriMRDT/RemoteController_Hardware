@@ -1,0 +1,110 @@
+Member Name(s): Jared Allen
+Project: PCB Rover Controller
+System Objective:  Remote operate rover in two modes, standard tank drive and assisted drive (to allow non-experienced users drive the rover) and 
+		   do so without connection to base station software.
+
+
+System Requirements & Parameters:
+*ESP connection to rover
+*LCD to display important data such as speed
+*Assisted driving mode for non-experienced drivers to use.
+*Two joysticks, one for velocity and another for direction.
+*Battery operated with decent lifetime
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+9/21/19
+Design choices:
+
+*ESP8266 NodeMCU is going to be the main controller for the entire controller.
+*Note enough analogue in ports, so analogue to digital ICs required
+*Allows for the least amount of room to be used on the board
+*16x2 LCD with I2C is currently the choice of screen
+*Will use more power than OLED screen
+*I2C will only require 2 GPIO ports on nodeMCU
+
+Decisions made:
+
+*The decision was made to not use any microcontroller with ESP connection due to spacing and configuration issues. 
+
+Progress made:
+
+*Power system designed in schematic using 7805 voltage regulator. 9V battery brought down to 5V output.  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+9/27/19
+Design choices:
+
+*The PCF8574 IC was selected as the I2C bus for the LCD screen. If the use of digital ports does not become a problem, an I2C connection may not 
+ be used to save on complexity.
+*NodeMCU symbol was given a re-design to be less cluttered in terms of the pins. 
+
+Decisions made:
+
+*The decision was made to set up the LCD screen connection with an I2C bus through a PCF8574. 
+
+Progress made:
+
+*PCF8574 set up mostly completed and interfaced with LCD screen.
+*NodeMCU symbol updated and completed
+*Power supply on schematic was reorganized to look better in schematic
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+9/28/19
+Design choices:
+
+*The decision was made to use Sparkfun 2-axis joysticks.
+*Jumper will need to be added to switch between easy drive and tank drive with joysticks
+
+Decisions made:
+
+*Sparkfun joysticks
+
+Progress made:
+
+*Finalized all connections between I2C bus and LCD screen. Including connections to NodeMCU
+*Power symbol changed throughout schematic for consistency
+*Joystick footprint imported from Eagle
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+10/5/19
+Design choices:
+
+*Multiplexer connected with Joysticks was removed and replaced with MCP3008 ADC
+
+Decisions made:
+
+*MCP3008 ADC added. Both Joysticks (3 analog outputs each) are attached to the 8 channel ADC. The ADC used 4 GPIO pins (D5-D8) on the nodeMCU.
+*Power LED indicator will be added
+*Possible additional LED indicators will be added
+*Momentary Push Buttons will be added to the controller to act as future programmable hotkeys. The Joysticks can also each be pressed down 
+ to represent a button. (6 total push buttons)
+
+Progress made:
+
+*All connections between the joysticks, ADC, and esp should be completed.
+*All critical components (Joysticks, ESP, Power, and LCD) have been added.
+*Excluding the ability to switch between Safe Drive and Tank Drive, and a power switch.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+11/10/19
+Design choices:
+
+*Push buttons will be switched from 4 pin buttons to SMD 2 pin buttons to simplify design
+*5V and GND planes will be added to reduce the number of traces on the PCB
+
+Decisions made:
+
+*Add LED to TankDrive to indicate that it is on this setting
+*Change LEDs connected to power and D0
+*Change placement of Vias for better efficiency
+*Re-do schematic using a grid of 50 mil
+*Re-route traces
+
+Progress made:
+
+*Repository re-organized to make accessing files easier
+*All components tested on breadboard, and connections are finalized
