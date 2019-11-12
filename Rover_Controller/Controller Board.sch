@@ -26,33 +26,6 @@ F 3 "" H 4300 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 5D9CD133
-P 10420 5670
-F 0 "JP1" V 10374 5772 50  0000 L CNN
-F 1 "Jumper_NC_Dual" V 10465 5772 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10420 5670 50  0001 C CNN
-F 3 "~" H 10420 5670 50  0001 C CNN
-	1    10420 5670
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10320 5670 10060 5670
-Wire Wire Line
-	10420 5420 10420 5390
-Wire Wire Line
-	10420 5390 10280 5390
-Wire Wire Line
-	10420 5920 10420 5950
-Wire Wire Line
-	10420 5950 10290 5950
-Text GLabel 10280 5390 0    50   BiDi ~ 0
-TankDrive
-Text GLabel 10290 5950 0    50   BiDi ~ 0
-SafeDrive
-Text Notes 9650 6350 0    59   ~ 12
-Drive Mode Jumper
-$Comp
 L Rover_Controller:ESP8266_NodeMCU ESP-12E1
 U 1 1 5D86DCF0
 P 4600 3200
@@ -63,8 +36,6 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20
 	1    4600 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10060 5670 0    50   Input ~ 0
-5V
 NoConn ~ 5350 4100
 NoConn ~ 5350 4250
 NoConn ~ 5350 5000
@@ -843,7 +814,7 @@ L Device:R R7
 U 1 1 5DFB7CD2
 P 10650 2250
 F 0 "R7" V 10550 2250 50  0000 C CNN
-F 1 "1K" V 10650 2250 50  0000 C CNN
+F 1 "10K" V 10650 2250 50  0000 C CNN
 F 2 "" V 10580 2250 50  0001 C CNN
 F 3 "~" H 10650 2250 50  0001 C CNN
 	1    10650 2250
@@ -854,7 +825,7 @@ L Device:R R8
 U 1 1 5DFB8D20
 P 10650 2350
 F 0 "R8" V 10750 2350 50  0000 C CNN
-F 1 "1K" V 10650 2350 50  0000 C CNN
+F 1 "10K" V 10650 2350 50  0000 C CNN
 F 2 "" V 10580 2350 50  0001 C CNN
 F 3 "~" H 10650 2350 50  0001 C CNN
 	1    10650 2350
@@ -1089,14 +1060,92 @@ Wire Notes Line
 Text Notes 9600 3000 0    50   ~ 10
 Drive Mode Jumper
 $Comp
-L Device:Jumper_NC_Dual JP?
+L Device:Jumper_NC_Dual JP1
 U 1 1 5E3DB962
-P 10150 3800
-F 0 "JP?" V 10104 3902 50  0000 L CNN
-F 1 "Jumper_NC_Dual" V 10195 3902 50  0000 L CNN
-F 2 "" H 10150 3800 50  0001 C CNN
-F 3 "~" H 10150 3800 50  0001 C CNN
-	1    10150 3800
-	0    1    1    0   
+P 9950 3550
+F 0 "JP1" H 9900 3800 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 9700 3700 50  0000 L CNN
+F 2 "" H 9950 3550 50  0001 C CNN
+F 3 "~" H 9950 3550 50  0001 C CNN
+	1    9950 3550
+	1    0    0    -1  
 $EndComp
+Text GLabel 9950 3800 3    50   Output ~ 0
+5V
+Text GLabel 9600 4000 3    50   Input ~ 0
+TankDrive
+Text GLabel 10300 4000 3    50   Input ~ 0
+SafeDrive
+$Comp
+L Device:R R14
+U 1 1 5E3DE08D
+P 10550 3750
+F 0 "R14" V 10650 3750 50  0000 C CNN
+F 1 "10K" V 10550 3750 50  0000 C CNN
+F 2 "" V 10480 3750 50  0001 C CNN
+F 3 "~" H 10550 3750 50  0001 C CNN
+	1    10550 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9950 3800 9950 3650
+$Comp
+L Device:R R13
+U 1 1 5E4102AB
+P 9350 3750
+F 0 "R13" V 9450 3750 50  0000 C CNN
+F 1 "10K" V 9350 3750 50  0000 C CNN
+F 2 "" V 9280 3750 50  0001 C CNN
+F 3 "~" H 9350 3750 50  0001 C CNN
+	1    9350 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E417361
+P 9150 4150
+F 0 "#PWR?" H 9150 3900 50  0001 C CNN
+F 1 "GND" H 9155 3977 50  0000 C CNN
+F 2 "" H 9150 4150 50  0001 C CNN
+F 3 "" H 9150 4150 50  0001 C CNN
+	1    9150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E418313
+P 10750 4150
+F 0 "#PWR?" H 10750 3900 50  0001 C CNN
+F 1 "GND" H 10755 3977 50  0000 C CNN
+F 2 "" H 10750 4150 50  0001 C CNN
+F 3 "" H 10750 4150 50  0001 C CNN
+	1    10750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4150 9150 3750
+Wire Wire Line
+	9150 3750 9200 3750
+Wire Wire Line
+	9700 3550 9600 3550
+Wire Wire Line
+	9600 3550 9600 3750
+Wire Wire Line
+	10200 3550 10300 3550
+Wire Wire Line
+	10300 3550 10300 3750
+Wire Wire Line
+	9500 3750 9600 3750
+Connection ~ 9600 3750
+Wire Wire Line
+	9600 3750 9600 4000
+Wire Wire Line
+	10400 3750 10300 3750
+Connection ~ 10300 3750
+Wire Wire Line
+	10300 3750 10300 4000
+Wire Wire Line
+	10700 3750 10750 3750
+Wire Wire Line
+	10750 3750 10750 4150
 $EndSCHEMATC
