@@ -274,8 +274,8 @@ U 1 1 5DDA511F
 P 3700 1650
 F 0 "I2C_Bus1" H 3900 2400 50  0000 C CNN
 F 1 "PCF8574" H 3900 2300 50  0000 C CNN
-F 2 "" H 3700 1650 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 3700 1650 50  0001 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 3700 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/pcf8574.pdf" H 3700 1650 50  0001 C CNN
 	1    3700 1650
 	1    0    0    -1  
 $EndComp
