@@ -1,4 +1,4 @@
-update=11/3/2019 12:48:18 PM
+update=11/15/2019 10:36:57 PM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=MRDT_Controller_Board.pretty/Controller Board.net
+LastNetListRead=Controller Board.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
