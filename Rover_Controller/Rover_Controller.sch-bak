@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Rover_Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -91,7 +92,7 @@ U 1 1 5DD00F90
 P 1700 950
 F 0 "5V_Reg_1" H 1700 1192 50  0000 C CNN
 F 1 "L7805" H 1700 1101 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown" H 1725 800 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 1725 800 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1700 900 50  0001 C CNN
 	1    1700 950 
 	1    0    0    -1  
@@ -249,10 +250,10 @@ F 3 "~" H 1950 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED TANK_DRIVE1
+L Device:LED TANK1
 U 1 1 5DD3C2FE
 P 1950 3350
-F 0 "TANK_DRIVE1" V 1989 3233 50  0000 R CNN
+F 0 "TANK1" V 1989 3233 50  0000 R CNN
 F 1 "RED" V 1898 3233 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1950 3350 50  0001 C CNN
 F 3 "~" H 1950 3350 50  0001 C CNN
