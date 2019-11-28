@@ -92,7 +92,7 @@ U 1 1 5DD00F90
 P 1700 950
 F 0 "5V_Reg_1" H 1700 1192 50  0000 C CNN
 F 1 "L7805" H 1700 1101 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 1725 800 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 1725 800 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1700 900 50  0001 C CNN
 	1    1700 950 
 	1    0    0    -1  
