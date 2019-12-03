@@ -54,17 +54,6 @@ NoConn ~ 3850 3350
 NoConn ~ 3850 4100
 NoConn ~ 3850 4250
 $Comp
-L Device:Battery_Cell BT1
-U 1 1 5DCD7CBE
-P 600 1350
-F 0 "BT1" H 718 1446 50  0000 L CNN
-F 1 "9V_BAT" H 718 1355 50  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" V 600 1410 50  0001 C CNN
-F 3 "~" V 600 1410 50  0001 C CNN
-	1    600  1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5DCEDACE
 P 1300 1300
@@ -580,14 +569,6 @@ Text GLabel 5500 3800 2    50   Input ~ 0
 SW2
 Text GLabel 5500 3950 2    50   Input ~ 0
 SW1
-Text GLabel 5500 4400 2    50   Input ~ 0
-CLK
-Text GLabel 5500 4550 2    50   Input ~ 0
-Dout
-Text GLabel 5500 4700 2    50   Output ~ 0
-Din
-Text GLabel 5500 4850 2    50   Input ~ 0
-CS
 Wire Wire Line
 	4450 5550 4450 5400
 Wire Wire Line
@@ -1148,4 +1129,23 @@ Wire Wire Line
 	10700 3750 10750 3750
 Wire Wire Line
 	10750 3750 10750 4150
+Text GLabel 5500 4850 2    50   Input ~ 0
+CS
+Text GLabel 5500 4700 2    50   Output ~ 0
+Din
+Text GLabel 5500 4550 2    50   Input ~ 0
+Dout
+Text GLabel 5500 4400 2    50   Input ~ 0
+CLK
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5DCD7CBE
+P 600 1350
+F 0 "BT1" H 718 1446 50  0000 L CNN
+F 1 "9V_BAT" H 718 1355 50  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" V 600 1410 50  0001 C CNN
+F 3 "~" V 600 1410 50  0001 C CNN
+	1    600  1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
