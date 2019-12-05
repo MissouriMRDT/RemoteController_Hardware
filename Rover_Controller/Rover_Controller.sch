@@ -86,23 +86,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    1700 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPST PWR_SW1
-U 1 1 5DD2E367
-P 950 950
-F 0 "PWR_SW1" H 950 1185 50  0000 C CNN
-F 1 "SW_SPST" H 950 1094 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 950 950 50  0001 C CNN
-F 3 "~" H 950 950 50  0001 C CNN
-	1    950  950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	600  1150 600  950 
-Wire Wire Line
-	600  950  750  950 
-Wire Wire Line
-	1150 950  1300 950 
 Wire Wire Line
 	1300 1150 1300 950 
 Connection ~ 1300 950 
@@ -588,7 +571,7 @@ Wire Notes Line
 Text Notes 8400 600  0    50   ~ 10
 Joysticks & Jumper w/ ADC
 $Comp
-L Joystick:JOYSTICK JOY1
+L JOYSTICK:JOYSTICK JOY1
 U 1 1 5DE1F077
 P 7800 1500
 F 0 "JOY1" H 7650 2150 50  0000 L CNN
@@ -649,7 +632,7 @@ Connection ~ 7300 2000
 Wire Wire Line
 	7300 2000 7300 1700
 $Comp
-L Joystick:JOYSTICK JOY2
+L JOYSTICK:JOYSTICK JOY2
 U 1 1 5DEA4DBF
 P 9000 1500
 F 0 "JOY2" H 8850 2150 50  0000 L CNN
@@ -855,50 +838,6 @@ Wire Notes Line
 	500  500  500  3950
 Text GLabel 7000 3250 1    50   Output ~ 0
 5V
-$Comp
-L Switch:SW_SPST SW4
-U 1 1 5E119E42
-P 8150 4450
-F 0 "SW4" H 8150 4685 50  0000 C CNN
-F 1 "SW_SPST" H 8150 4594 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 8150 4450 50  0001 C CNN
-F 3 "~" H 8150 4450 50  0001 C CNN
-	1    8150 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW3
-U 1 1 5E119090
-P 8150 4100
-F 0 "SW3" H 8150 4335 50  0000 C CNN
-F 1 "SW_SPST" H 8150 4244 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 8150 4100 50  0001 C CNN
-F 3 "~" H 8150 4100 50  0001 C CNN
-	1    8150 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5E11821C
-P 8150 3750
-F 0 "SW2" H 8150 3985 50  0000 C CNN
-F 1 "SW_SPST" H 8150 3894 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 8150 3750 50  0001 C CNN
-F 3 "~" H 8150 3750 50  0001 C CNN
-	1    8150 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5E1175A9
-P 8150 3400
-F 0 "SW1" H 8150 3635 50  0000 C CNN
-F 1 "SW_SPST" H 8150 3544 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 8150 3400 50  0001 C CNN
-F 3 "~" H 8150 3400 50  0001 C CNN
-	1    8150 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R12
 U 1 1 5E135845
@@ -1146,6 +1085,67 @@ F 1 "9V_BAT" H 718 1355 50  0000 L CNN
 F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" V 600 1410 50  0001 C CNN
 F 3 "~" V 600 1410 50  0001 C CNN
 	1    600  1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 950  1300 950 
+Wire Wire Line
+	600  950  750  950 
+Wire Wire Line
+	600  1150 600  950 
+$Comp
+L Switch:SW_SPST PWR_SW1
+U 1 1 5DD2E367
+P 950 950
+F 0 "PWR_SW1" H 950 1185 50  0000 C CNN
+F 1 "SW_SPST" H 950 1094 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm" H 950 950 50  0001 C CNN
+F 3 "~" H 950 950 50  0001 C CNN
+	1    950  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5DED312E
+P 8150 4450
+F 0 "SW4" H 8150 4735 50  0000 C CNN
+F 1 "SW_Push" H 8150 4644 50  0000 C CNN
+F 2 "" H 8150 4650 50  0001 C CNN
+F 3 "~" H 8150 4650 50  0001 C CNN
+	1    8150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5DECBB14
+P 8150 4100
+F 0 "SW3" H 8150 4385 50  0000 C CNN
+F 1 "SW_Push" H 8150 4294 50  0000 C CNN
+F 2 "" H 8150 4300 50  0001 C CNN
+F 3 "~" H 8150 4300 50  0001 C CNN
+	1    8150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DEC45B2
+P 8150 3750
+F 0 "SW2" H 8150 4035 50  0000 C CNN
+F 1 "SW_Push" H 8150 3944 50  0000 C CNN
+F 2 "" H 8150 3950 50  0001 C CNN
+F 3 "~" H 8150 3950 50  0001 C CNN
+	1    8150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DE9F1D9
+P 8150 3400
+F 0 "SW1" H 8150 3685 50  0000 C CNN
+F 1 "SW_Push" H 8150 3594 50  0000 C CNN
+F 2 "" H 8150 3600 50  0001 C CNN
+F 3 "~" H 8150 3600 50  0001 C CNN
+	1    8150 3400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

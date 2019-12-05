@@ -1,4 +1,4 @@
-update=12/3/2019 1:45:02 PM
+update=12/5/2019 1:19:15 PM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Controller Board.net
+LastNetListRead=Rover_Controller.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
