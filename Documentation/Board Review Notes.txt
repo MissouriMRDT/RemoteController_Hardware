@@ -34,20 +34,20 @@ folder for documentation (Transfer stuff to text file, not Word)
 
 *Make resistors R7 and R8 10K 
 
-Make jumper on PCB horizontal, and increase 
+*Make jumper on PCB horizontal, and increase 
 
-Make a GND plane on the PCB, and then the GND traces can be removed. 
+*Make a GND plane on the PCB, and then the GND traces can be removed. 
 
-Also add a 5V plane that will allow for the 5V traces to be removed
+*Also add a 5V plane that will allow for the 5V traces to be removed
 
-Via's cannot be placed on pads, so move them off of the pad then connect to the via
+*Via's cannot be placed on pads, so move them off of the pad then connect to the via
 
-Run all traces on 10mil grid
+*Run all traces on 10mil grid
 
-Try not to use longer diagonal traces, make longer straight traces
+*Try not to use longer diagonal traces, make longer straight traces
 
-Standardize the name of the board on the PCB to match the standardized name in the repository
+*Standardize the name of the board on the PCB to match the standardized name in the repository
 
-Put red LED for TankDrive to indicate that it is on
+*Put red LED for TankDrive to indicate that it is on
 
 for Rev2 bring BOM (Bill of Material)
