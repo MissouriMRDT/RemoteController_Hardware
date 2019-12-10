@@ -124,13 +124,6 @@ Wire Wire Line
 Wire Wire Line
 	600  1550 1300 1550
 Connection ~ 1300 1550
-Text GLabel 2300 950  2    50   Input ~ 0
-5V
-Wire Wire Line
-	2300 950  2100 950 
-Connection ~ 2100 950 
-Text GLabel 800  2450 1    50   Output ~ 0
-5V
 Text GLabel 1400 2450 1    50   Output ~ 0
 D0
 $Comp
@@ -265,8 +258,6 @@ F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 5200 1650 50  0001 C 
 $EndComp
 Text Notes 4150 600  0    50   ~ 10
 I2C_16X2_LCD
-Text GLabel 2800 750  0    50   Output ~ 0
-5V
 $Comp
 L Device:R R2
 U 1 1 5DDDA455
@@ -451,8 +442,6 @@ Wire Wire Line
 	6100 1950 6100 2100
 Wire Wire Line
 	6100 2100 6150 2100
-Text GLabel 6100 1550 1    50   Output ~ 0
-5V
 Text GLabel 6000 2100 0    50   Output ~ 0
 P3
 Wire Wire Line
@@ -470,8 +459,6 @@ Text GLabel 5600 1950 2    50   Output ~ 0
 k
 Wire Wire Line
 	5600 1950 5500 1950
-Text GLabel 5600 2050 2    50   Output ~ 0
-5V
 Wire Wire Line
 	5600 2050 5500 2050
 Text Notes 5550 1900 0    31   ~ 0
@@ -500,8 +487,6 @@ F 3 "" H 6500 1200 50  0001 C CNN
 	1    6500 1200
 	1    0    0    -1  
 $EndComp
-Text GLabel 5800 850  1    50   Output ~ 0
-5V
 Wire Wire Line
 	5800 850  5800 950 
 Wire Wire Line
@@ -571,7 +556,7 @@ Wire Notes Line
 Text Notes 8400 600  0    50   ~ 10
 Joysticks & Jumper w/ ADC
 $Comp
-L JOYSTICK:JOYSTICK JOY1
+L Joystick:JOYSTICK JOY1
 U 1 1 5DE1F077
 P 7800 1500
 F 0 "JOY1" H 7650 2150 50  0000 L CNN
@@ -593,10 +578,6 @@ Text GLabel 7250 1600 0    50   Input ~ 0
 LeftHorz
 Text GLabel 7250 1900 0    50   Input ~ 0
 LeftSel
-Text GLabel 7350 900  1    50   Output ~ 0
-5V
-Text GLabel 4450 5550 3    50   Output ~ 0
-5V
 $Comp
 L power:GND #PWR0108
 U 1 1 5DE62E80
@@ -632,7 +613,7 @@ Connection ~ 7300 2000
 Wire Wire Line
 	7300 2000 7300 1700
 $Comp
-L JOYSTICK:JOYSTICK JOY2
+L Joystick:JOYSTICK JOY2
 U 1 1 5DEA4DBF
 P 9000 1500
 F 0 "JOY2" H 8850 2150 50  0000 L CNN
@@ -654,8 +635,6 @@ Text GLabel 8450 1600 0    50   Input ~ 0
 RightHorz
 Text GLabel 8450 1900 0    50   Input ~ 0
 RightSel
-Text GLabel 8550 900  1    50   Output ~ 0
-5V
 $Comp
 L power:GND #PWR0109
 U 1 1 5DEA4DCC
@@ -725,10 +704,6 @@ Wire Wire Line
 	10100 1000 10100 900 
 Wire Wire Line
 	10200 1000 10200 900 
-Text GLabel 9400 1400 0    50   Output ~ 0
-5V
-Text GLabel 9400 1700 0    50   Output ~ 0
-5V
 Text GLabel 9900 900  1    50   Output ~ 0
 CLK
 Text GLabel 10000 900  1    50   Output ~ 0
@@ -795,8 +770,6 @@ F 3 "~" H 10650 2350 50  0001 C CNN
 	1    10650 2350
 	0    1    1    0   
 $EndComp
-Text GLabel 11050 2050 1    50   Output ~ 0
-5V
 Wire Notes Line
 	6850 2750 2550 2750
 Wire Notes Line
@@ -836,8 +809,6 @@ Wire Notes Line
 	500  3950 2550 3950
 Wire Notes Line
 	500  500  500  3950
-Text GLabel 7000 3250 1    50   Output ~ 0
-5V
 $Comp
 L Device:R R12
 U 1 1 5E135845
@@ -990,8 +961,6 @@ F 3 "~" H 9950 3550 50  0001 C CNN
 	1    9950 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 9950 3800 3    50   Output ~ 0
-5V
 Text GLabel 9600 4000 3    50   Input ~ 0
 TankDrive
 Text GLabel 10300 4000 3    50   Input ~ 0
@@ -1146,6 +1115,163 @@ F 1 "SW_Push" H 8150 3594 50  0000 C CNN
 F 2 "" H 8150 3600 50  0001 C CNN
 F 3 "~" H 8150 3600 50  0001 C CNN
 	1    8150 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 950 
+Wire Wire Line
+	2300 950  2100 950 
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF1DCE7
+P 2300 950
+F 0 "#PWR?" H 2300 800 50  0001 C CNN
+F 1 "+5V" V 2350 1000 50  0000 L CNN
+F 2 "" H 2300 950 50  0001 C CNN
+F 3 "" H 2300 950 50  0001 C CNN
+	1    2300 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF1EAB5
+P 2800 750
+F 0 "#PWR?" H 2800 600 50  0001 C CNN
+F 1 "+5V" V 2750 800 50  0000 L CNN
+F 2 "" H 2800 750 50  0001 C CNN
+F 3 "" H 2800 750 50  0001 C CNN
+	1    2800 750 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF36C17
+P 5600 2050
+F 0 "#PWR?" H 5600 1900 50  0001 C CNN
+F 1 "+5V" V 5650 2050 50  0000 L CNN
+F 2 "" H 5600 2050 50  0001 C CNN
+F 3 "" H 5600 2050 50  0001 C CNN
+	1    5600 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF37568
+P 6100 1550
+F 0 "#PWR?" H 6100 1400 50  0001 C CNN
+F 1 "+5V" H 6100 1700 50  0000 C CNN
+F 2 "" H 6100 1550 50  0001 C CNN
+F 3 "" H 6100 1550 50  0001 C CNN
+	1    6100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF381CA
+P 5800 850
+F 0 "#PWR?" H 5800 700 50  0001 C CNN
+F 1 "+5V" H 5800 1000 50  0000 C CNN
+F 2 "" H 5800 850 50  0001 C CNN
+F 3 "" H 5800 850 50  0001 C CNN
+	1    5800 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF48FDF
+P 7350 900
+F 0 "#PWR?" H 7350 750 50  0001 C CNN
+F 1 "+5V" H 7365 1073 50  0000 C CNN
+F 2 "" H 7350 900 50  0001 C CNN
+F 3 "" H 7350 900 50  0001 C CNN
+	1    7350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF499FB
+P 8550 900
+F 0 "#PWR?" H 8550 750 50  0001 C CNN
+F 1 "+5V" H 8565 1073 50  0000 C CNN
+F 2 "" H 8550 900 50  0001 C CNN
+F 3 "" H 8550 900 50  0001 C CNN
+	1    8550 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF60C80
+P 9400 1400
+F 0 "#PWR?" H 9400 1250 50  0001 C CNN
+F 1 "+5V" V 9450 1400 50  0000 L CNN
+F 2 "" H 9400 1400 50  0001 C CNN
+F 3 "" H 9400 1400 50  0001 C CNN
+	1    9400 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF61D38
+P 9400 1700
+F 0 "#PWR?" H 9400 1550 50  0001 C CNN
+F 1 "+5V" V 9450 1700 50  0000 L CNN
+F 2 "" H 9400 1700 50  0001 C CNN
+F 3 "" H 9400 1700 50  0001 C CNN
+	1    9400 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF63F75
+P 11050 2050
+F 0 "#PWR?" H 11050 1900 50  0001 C CNN
+F 1 "+5V" H 11065 2223 50  0000 C CNN
+F 2 "" H 11050 2050 50  0001 C CNN
+F 3 "" H 11050 2050 50  0001 C CNN
+	1    11050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF73C0D
+P 9950 3800
+F 0 "#PWR?" H 9950 3650 50  0001 C CNN
+F 1 "+5V" H 9965 3973 50  0000 C CNN
+F 2 "" H 9950 3800 50  0001 C CNN
+F 3 "" H 9950 3800 50  0001 C CNN
+	1    9950 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF74A26
+P 7000 3250
+F 0 "#PWR?" H 7000 3100 50  0001 C CNN
+F 1 "+5V" H 7000 3400 50  0000 C CNN
+F 2 "" H 7000 3250 50  0001 C CNN
+F 3 "" H 7000 3250 50  0001 C CNN
+	1    7000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF7D937
+P 4450 5550
+F 0 "#PWR?" H 4450 5400 50  0001 C CNN
+F 1 "+5V" H 4450 5700 50  0000 C CNN
+F 2 "" H 4450 5550 50  0001 C CNN
+F 3 "" H 4450 5550 50  0001 C CNN
+	1    4450 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF86102
+P 800 2450
+F 0 "#PWR?" H 800 2300 50  0001 C CNN
+F 1 "+5V" H 815 2623 50  0000 C CNN
+F 2 "" H 800 2450 50  0001 C CNN
+F 3 "" H 800 2450 50  0001 C CNN
+	1    800  2450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
