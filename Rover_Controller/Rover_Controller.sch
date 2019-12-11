@@ -245,17 +245,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/pcf8574.pdf" H 3700 1650 50  0001 C CNN
 	1    3700 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Display_Character:RC1602A 16x2_LCD1
-U 1 1 5DDA816F
-P 5100 1750
-F 0 "16x2_LCD1" H 5350 2500 50  0000 C CNN
-F 1 "RC1602A" H 5300 2400 50  0000 C CNN
-F 2 "Display:WC1602A" H 5200 950 50  0001 C CNN
-F 3 "https://www.lumex.com/spec/LCR-U01602DSF-A-WH.pdf" H 5200 1650 50  0001 C CNN
-	1    5100 1750
-	1    0    0    -1  
-$EndComp
 Text Notes 4150 600  0    50   ~ 10
 I2C_16X2_LCD
 $Comp
@@ -351,12 +340,6 @@ F 3 "" H 3700 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 2500 3700 2350
-Wire Wire Line
-	4200 1250 4700 1250
-Wire Wire Line
-	4200 1350 4700 1350
-Wire Wire Line
-	4200 1450 4700 1450
 $Comp
 L power:GND #PWR0105
 U 1 1 5DEF1FC2
@@ -375,25 +358,17 @@ Wire Wire Line
 Wire Wire Line
 	4600 1650 4600 1950
 Wire Wire Line
-	4600 1950 4700 1950
-Wire Wire Line
 	4200 1750 4500 1750
 Wire Wire Line
 	4500 1750 4500 2050
-Wire Wire Line
-	4500 2050 4700 2050
 Wire Wire Line
 	4200 1850 4400 1850
 Wire Wire Line
 	4400 1850 4400 2150
 Wire Wire Line
-	4400 2150 4700 2150
-Wire Wire Line
 	4200 1950 4300 1950
 Wire Wire Line
 	4300 1950 4300 2250
-Wire Wire Line
-	4300 2250 4700 2250
 Text GLabel 4300 1550 2    50   Output ~ 0
 P3
 Wire Wire Line
@@ -461,8 +436,6 @@ Wire Wire Line
 	5600 1950 5500 1950
 Wire Wire Line
 	5600 2050 5500 2050
-Text Notes 5550 1900 0    31   ~ 0
-Backlight
 $Comp
 L Device:R_POT_TRIM RV1
 U 1 1 5E01E4CC
@@ -556,7 +529,7 @@ Wire Notes Line
 Text Notes 8400 600  0    50   ~ 10
 Joysticks & Jumper w/ ADC
 $Comp
-L Joystick:JOYSTICK JOY1
+L JOYSTICK:JOYSTICK JOY1
 U 1 1 5DE1F077
 P 7800 1500
 F 0 "JOY1" H 7650 2150 50  0000 L CNN
@@ -613,7 +586,7 @@ Connection ~ 7300 2000
 Wire Wire Line
 	7300 2000 7300 1700
 $Comp
-L Joystick:JOYSTICK JOY2
+L JOYSTICK:JOYSTICK JOY2
 U 1 1 5DEA4DBF
 P 9000 1500
 F 0 "JOY2" H 8850 2150 50  0000 L CNN
@@ -1275,4 +1248,33 @@ Wire Wire Line
 Wire Wire Line
 	600  1050 600  1150
 NoConn ~ 1150 1150
+Wire Wire Line
+	4300 2250 4700 2250
+Wire Wire Line
+	4400 2150 4700 2150
+Wire Wire Line
+	4500 2050 4700 2050
+Wire Wire Line
+	4600 1950 4700 1950
+Wire Wire Line
+	4200 1450 4700 1450
+Wire Wire Line
+	4200 1350 4700 1350
+Wire Wire Line
+	4200 1250 4700 1250
+Text Notes 5550 1900 0    31   ~ 0
+Backlight
+$Comp
+L Display_Character:RC1602A 16x2_LCD1
+U 1 1 5DDA816F
+P 5100 1750
+F 0 "16x2_LCD1" H 5350 2500 50  0000 C CNN
+F 1 "RC1602A" H 5300 2400 50  0000 C CNN
+F 2 "Display:WC1602A" H 5200 950 50  0001 C CNN
+F 3 "https://www.lumex.com/spec/LCR-U01602DSF-A-WH.pdf" H 5200 1650 50  0001 C CNN
+	1    5100 1750
+	1    0    0    -1  
+$EndComp
+Text Notes 6500 1750 0    31   ~ 0
+Backlight
 $EndSCHEMATC
