@@ -222,8 +222,8 @@
     (add_net k)
   )
 
-  (module MRDT_Silkscreens:z_sig_Jared_Allen (layer F.Cu) (tedit 0) (tstamp 5DF13790)
-    (at 94.234 127.254)
+  (module Rover_Controller:z_sig_Jared_Allen (layer F.Cu) (tedit 0) (tstamp 5DF13EA8)
+    (at 93.853 127.254)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
