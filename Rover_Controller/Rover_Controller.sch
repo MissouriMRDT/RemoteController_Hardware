@@ -252,7 +252,7 @@ P 5100 1750
 F 0 "16x2_LCD1" H 5350 2500 50  0000 C CNN
 F 1 "RC1602A" H 5300 2400 50  0000 C CNN
 F 2 "Display:WC1602A" H 5200 950 50  0001 C CNN
-F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 5200 1650 50  0001 C CNN
+F 3 "https://www.lumex.com/spec/LCR-U01602DSF-A-WH.pdf" H 5200 1650 50  0001 C CNN
 	1    5100 1750
 	1    0    0    -1  
 $EndComp
@@ -556,7 +556,7 @@ Wire Notes Line
 Text Notes 8400 600  0    50   ~ 10
 Joysticks & Jumper w/ ADC
 $Comp
-L JOYSTICK:JOYSTICK JOY1
+L Joystick:JOYSTICK JOY1
 U 1 1 5DE1F077
 P 7800 1500
 F 0 "JOY1" H 7650 2150 50  0000 L CNN
@@ -613,7 +613,7 @@ Connection ~ 7300 2000
 Wire Wire Line
 	7300 2000 7300 1700
 $Comp
-L JOYSTICK:JOYSTICK JOY2
+L Joystick:JOYSTICK JOY2
 U 1 1 5DEA4DBF
 P 9000 1500
 F 0 "JOY2" H 8850 2150 50  0000 L CNN
