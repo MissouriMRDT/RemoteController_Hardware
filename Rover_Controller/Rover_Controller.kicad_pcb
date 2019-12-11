@@ -1452,12 +1452,17 @@
     (pad MOUNT4 thru_hole circle (at 7.62 -6.6675) (size 2.286 2.286) (drill 1.397) (layers *.Cu *.Mask))
     (pad MOUNT1 thru_hole circle (at -7.62 -6.6675) (size 2.286 2.286) (drill 1.397) (layers *.Cu *.Mask))
     (model B:/Downloads/products/9032/step/9032.STEP
-      (offset (xyz -8 -8 0))
+      (offset (xyz -13.97 -8.000999999999999 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
     (model "C:/Users/Jared/Documents/GitHub/RemoteController_Hardware/3D Models/Joystick.STEP"
       (offset (xyz -8.635999999999999 -7.62 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/Rover_Controller 3D Models/Joystick.STEP"
+      (offset (xyz -7.9756 -7.9502 -0.1016))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1557,12 +1562,17 @@
     (pad MOUNT4 thru_hole circle (at 7.62 -6.6675) (size 2.286 2.286) (drill 1.397) (layers *.Cu *.Mask))
     (pad MOUNT1 thru_hole circle (at -7.62 -6.6675) (size 2.286 2.286) (drill 1.397) (layers *.Cu *.Mask))
     (model "B:/GitHub/RemoteController_Hardware/3D Models/Joystick.STEP"
-      (offset (xyz -15.12062 -6.84784 0))
+      (offset (xyz -15.12062 -43.01744 -5.156200000000001))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
     (model "C:/Users/Jared/Documents/GitHub/RemoteController_Hardware/3D Models/Joystick.STEP"
       (offset (xyz -8.255000000000001 -8.255000000000001 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/Rover_Controller 3D Models/Joystick.STEP"
+      (offset (xyz -7.874 -8.128 -1.397))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1645,6 +1655,11 @@
       (net 58 +5V))
     (pad 30 thru_hole circle (at 11.43 35.56 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
       (net 14 "Net-(ESP-12E1-Pad30)"))
+    (model "${KIPRJMOD}/Rover_Controller 3D Models/ESP8266 v7.stp"
+      (offset (xyz -13.0302 -41.91 1.0414))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B4B45C9) (tstamp 5DD479D8)
@@ -1961,7 +1976,12 @@
     (pad 1 smd rect (at 3.6 -1.5) (size 1.6 1.4) (layers F.Cu F.Paste F.Mask)
       (net 46 SW1))
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_TL3305A.wrl
-      (at (xyz 0 0 0))
+      (offset (xyz 0.0254 0 0.0762))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/Rover_Controller 3D Models/PZ_PushButton.stp"
+      (offset (xyz 0 -0.3302 3.3274))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -2024,7 +2044,12 @@
     (pad 2 smd rect (at -3.6 1.5) (size 1.6 1.4) (layers F.Cu F.Paste F.Mask)
       (net 13 GND))
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_TL3305A.wrl
-      (at (xyz 0 0 0))
+      (offset (xyz 0 0 0.3302))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/Rover_Controller 3D Models/PZ_PushButton.stp"
+      (offset (xyz 0 -0.3556 3.3528))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -2091,6 +2116,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/Rover_Controller 3D Models/PZ_PushButton.stp"
+      (offset (xyz 0 -0.508 3.0734))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Button_Switch_SMD:SW_SPST_TL3305A (layer F.Cu) (tedit 5ABC3A97) (tstamp 5DE9ADC9)
@@ -2151,6 +2181,11 @@
       (net 43 SW4))
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_TL3305A.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/Rover_Controller 3D Models/PZ_PushButton.stp"
+      (offset (xyz 0 -0.4318 3.530600000000001))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -2920,7 +2955,7 @@
   (segment (start 194.5324 62.9604) (end 193.015 62.9604) (width 0.381) (layer F.Cu) (net 58))
   (segment (start 194.818 63.246) (end 194.5324 62.9604) (width 0.381) (layer F.Cu) (net 58))
 
-  (zone (net 58) (net_name +5V) (layer B.Cu) (tstamp 5DF150E8) (hatch edge 0.508)
+  (zone (net 58) (net_name +5V) (layer B.Cu) (tstamp 5DF17C7D) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3651,7 +3686,7 @@
       )
     )
   )
-  (zone (net 13) (net_name GND) (layer F.Cu) (tstamp 5DF150E5) (hatch edge 0.508)
+  (zone (net 13) (net_name GND) (layer F.Cu) (tstamp 5DF17C7A) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -4486,7 +4521,7 @@
       )
     )
   )
-  (zone (net 13) (net_name GND) (layer F.Cu) (tstamp 5DF150E2) (hatch edge 0.508)
+  (zone (net 13) (net_name GND) (layer F.Cu) (tstamp 5DF17C77) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -4496,7 +4531,7 @@
       )
     )
   )
-  (zone (net 13) (net_name GND) (layer F.Cu) (tstamp 5DF150E2) (hatch edge 0.508)
+  (zone (net 13) (net_name GND) (layer F.Cu) (tstamp 5DF17C74) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
