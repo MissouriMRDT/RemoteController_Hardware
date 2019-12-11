@@ -1,4 +1,4 @@
-17244160268154089
+17247312358874297
 3362_Trimmer_Pot
 3362P-1-103LF
 
@@ -50498,6 +50498,13 @@ z_sig_Jacob_Troy_Sig_22mmx16.5mm
 0
 0
 MRDT_Silkscreens
+z_sig_Jared_Allen
+
+
+0
+0
+0
+MRDT_Silkscreens
 z_sig_John_Bueke
 
 
@@ -67437,6 +67444,13 @@ PCF8574_THT
 0
 16
 16
+Rover_Controller
+z_sig_Jared_Allen
+
+
+0
+0
+0
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
