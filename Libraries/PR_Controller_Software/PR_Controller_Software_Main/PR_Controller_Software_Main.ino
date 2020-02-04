@@ -2,6 +2,7 @@
 #include <MCP3008.h>
 #include <SPI.h>
 #include <LiquidCrystal_I2C.h>
+#include <ESP8266WiFi.h>
 #include "PR_Controller_Header.h"
 
 
@@ -37,5 +38,6 @@ void setup() {
 
 void loop() {
   DisplayTest(lcd,adc);
+  menu(lcd,adc,SD3,SD2);
 
 }
