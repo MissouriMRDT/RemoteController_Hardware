@@ -15,45 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR0113
-U 1 1 5D943E61
-P 4300 5550
-F 0 "#PWR0113" H 4300 5300 50  0001 C CNN
-F 1 "GND" H 4305 5385 39  0000 C CNN
-F 2 "" H 4300 5550 50  0001 C CNN
-F 3 "" H 4300 5550 50  0001 C CNN
-	1    4300 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L ESP8266_NodeMCU:ESP8266_NodeMCU ESP-12E1
-U 1 1 5D86DCF0
-P 4600 3200
-F 0 "ESP-12E1" H 4600 3315 50  0000 C CNN
-F 1 "ESP8266_NodeMCU" H 4600 3224 50  0000 C CNN
-F 2 "Rover_Controller:ESP8266_nodeMCU" H 4600 3200 50  0001 C CNN
-F 3 "https://components101.com/sites/default/files/component_datasheet/ESP12E%20Datasheet.pdf" H 4600 3200 50  0001 C CNN
-	1    4600 3200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5350 4100
-NoConn ~ 5350 4250
-NoConn ~ 5350 5000
-NoConn ~ 5350 5150
-NoConn ~ 4900 5400
-NoConn ~ 4750 5400
-NoConn ~ 3850 5150
-NoConn ~ 3850 5000
-NoConn ~ 3850 4850
-NoConn ~ 3850 4700
-NoConn ~ 3850 4550
-NoConn ~ 3850 4400
-NoConn ~ 3850 3650
-NoConn ~ 3850 3500
-NoConn ~ 3850 3350
-NoConn ~ 3850 4100
-NoConn ~ 3850 4250
-$Comp
 L Device:C C1
 U 1 1 5DCEDACE
 P 1300 1300
@@ -480,48 +441,8 @@ NoConn ~ 4700 1650
 NoConn ~ 4700 1550
 Wire Notes Line
 	6850 500  6850 5800
-Text Notes 4100 2900 0    50   ~ 10
-ESP8266-12E nodeMCU V1.0
-Wire Wire Line
-	5350 3350 5500 3350
-Wire Wire Line
-	5350 3500 5500 3500
-Wire Wire Line
-	5350 3650 5500 3650
-Wire Wire Line
-	5350 3800 5500 3800
-Wire Wire Line
-	5350 3950 5500 3950
-Wire Wire Line
-	5350 4400 5500 4400
-Wire Wire Line
-	5350 4550 5500 4550
-Wire Wire Line
-	5350 4700 5500 4700
-Wire Wire Line
-	5350 4850 5500 4850
-Text GLabel 5500 3350 2    50   Output ~ 0
-D0
-Text GLabel 5500 3500 2    50   Input ~ 0
-SCL
-Text GLabel 5500 3650 2    50   Input ~ 0
-SDA
-Text GLabel 5500 3800 2    50   Input ~ 0
-SW2
-Text GLabel 5500 3950 2    50   Input ~ 0
-SW1
-Wire Wire Line
-	4450 5550 4450 5400
-Wire Wire Line
-	4300 5550 4300 5400
-Wire Wire Line
-	3850 3800 3700 3800
-Wire Wire Line
-	3850 3950 3700 3950
-Text GLabel 3700 3800 0    50   Input ~ 0
-SW3
-Text GLabel 3700 3950 0    50   Input ~ 0
-SW4
+Text Notes 4475 2900 0    50   ~ 10
+ESP8266-12E\n
 Wire Notes Line
 	500  500  11200 500 
 Wire Notes Line
@@ -1010,14 +931,6 @@ Wire Wire Line
 	10700 3750 10750 3750
 Wire Wire Line
 	10750 3750 10750 4150
-Text GLabel 5500 4850 2    50   Input ~ 0
-CS
-Text GLabel 5500 4700 2    50   Output ~ 0
-Din
-Text GLabel 5500 4550 2    50   Input ~ 0
-Dout
-Text GLabel 5500 4400 2    50   Input ~ 0
-CLK
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5DCD7CBE
@@ -1211,17 +1124,6 @@ F 3 "" H 7000 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0127
-U 1 1 5DF7D937
-P 4450 5550
-F 0 "#PWR0127" H 4450 5400 50  0001 C CNN
-F 1 "+5V" H 4450 5700 50  0000 C CNN
-F 2 "" H 4450 5550 50  0001 C CNN
-F 3 "" H 4450 5550 50  0001 C CNN
-	1    4450 5550
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+5V #PWR0128
 U 1 1 5DF86102
 P 800 2450
@@ -1277,4 +1179,41 @@ F 3 "https://www.lumex.com/spec/LCR-U01602DSF-A-WH.pdf" H 5200 1650 50  0001 C C
 $EndComp
 Text Notes 6500 1750 0    31   ~ 0
 Backlight
+$Comp
+L RF_Module:ESP-12E U1
+U 1 1 5E638750
+P 4800 4100
+F 0 "U1" H 5100 5050 50  0000 C CNN
+F 1 "ESP-12E" H 5100 5000 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 4800 4100 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 4450 4200 50  0001 C CNN
+	1    4800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E640BF8
+P 4800 4950
+F 0 "#PWR?" H 4800 4700 50  0001 C CNN
+F 1 "GND" H 4805 4777 50  0000 C CNN
+F 2 "" H 4800 4950 50  0001 C CNN
+F 3 "" H 4800 4950 50  0001 C CNN
+	1    4800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4800 4800 4950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E64956B
+P 4800 3200
+F 0 "#PWR?" H 4800 3050 50  0001 C CNN
+F 1 "+3.3V" H 4815 3373 50  0000 C CNN
+F 2 "" H 4800 3200 50  0001 C CNN
+F 3 "" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3200 4800 3300
 $EndSCHEMATC
