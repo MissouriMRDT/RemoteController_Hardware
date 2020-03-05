@@ -565,8 +565,6 @@ Wire Wire Line
 	8500 2000 8500 1700
 Wire Notes Line
 	2550 500  2550 5800
-Wire Notes Line
-	6850 5800 2550 5800
 $Comp
 L Analog_ADC:MCP3008 ADC1
 U 1 1 5DEEA6B1
@@ -701,8 +699,6 @@ Wire Wire Line
 	1950 2650 1950 2450
 Wire Notes Line
 	500  3950 2550 3950
-Wire Notes Line
-	500  500  500  3950
 $Comp
 L Device:R R12
 U 1 1 5E135845
@@ -1215,5 +1211,185 @@ F 3 "" H 4800 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 3200 4800 3300
+	4800 3200 4800 3250
+$Comp
+L Regulator_Linear:SPX3819M5-L-3-3 U1
+U 1 1 5E61E91E
+P 1400 4750
+F 0 "U1" H 1400 5092 50  0000 C CNN
+F 1 "SPX3819M5-L-3-3" H 1400 5001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1400 5075 50  0001 C CNN
+F 3 "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819" H 1400 4750 50  0001 C CNN
+	1    1400 4750
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2550 4100 500  4100
+Text Notes 1175 4100 0    50   ~ 10
+5V to 3V3 Regulator\n
+$Comp
+L Device:C C3
+U 1 1 5E6448C9
+P 800 5000
+F 0 "C3" H 915 5046 50  0000 L CNN
+F 1 "1uF" H 915 4955 50  0000 L CNN
+F 2 "" H 838 4850 50  0001 C CNN
+F 3 "~" H 800 5000 50  0001 C CNN
+	1    800  5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5E646F7A
+P 1750 5000
+F 0 "C4" H 1865 5041 50  0000 L CNN
+F 1 "470pF" H 1865 4955 43  0000 L CNN
+F 2 "" H 1788 4850 50  0001 C CNN
+F 3 "~" H 1750 5000 50  0001 C CNN
+	1    1750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5E64E2E9
+P 2150 5000
+F 0 "C5" H 2265 5041 50  0000 L CNN
+F 1 "10uF" H 2265 4955 43  0000 L CNN
+F 2 "" H 2188 4850 50  0001 C CNN
+F 3 "~" H 2150 5000 50  0001 C CNN
+	1    2150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E65549B
+P 800 5250
+F 0 "#PWR?" H 800 5000 50  0001 C CNN
+F 1 "GND" H 805 5077 50  0000 C CNN
+F 2 "" H 800 5250 50  0001 C CNN
+F 3 "" H 800 5250 50  0001 C CNN
+	1    800  5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E655D90
+P 1750 5250
+F 0 "#PWR?" H 1750 5000 50  0001 C CNN
+F 1 "GND" H 1755 5077 50  0000 C CNN
+F 2 "" H 1750 5250 50  0001 C CNN
+F 3 "" H 1750 5250 50  0001 C CNN
+	1    1750 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E656A38
+P 2150 5250
+F 0 "#PWR?" H 2150 5000 50  0001 C CNN
+F 1 "GND" H 2155 5077 50  0000 C CNN
+F 2 "" H 2150 5250 50  0001 C CNN
+F 3 "" H 2150 5250 50  0001 C CNN
+	1    2150 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E65719E
+P 1400 5250
+F 0 "#PWR?" H 1400 5000 50  0001 C CNN
+F 1 "GND" H 1405 5077 50  0000 C CNN
+F 2 "" H 1400 5250 50  0001 C CNN
+F 3 "" H 1400 5250 50  0001 C CNN
+	1    1400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 5250 1400 5050
+Wire Wire Line
+	800  5250 800  5150
+Wire Wire Line
+	1750 5250 1750 5150
+Wire Wire Line
+	2150 5250 2150 5150
+Wire Wire Line
+	1750 4850 1750 4750
+Wire Wire Line
+	1750 4750 1700 4750
+Wire Wire Line
+	2150 4850 2150 4650
+Wire Wire Line
+	2150 4650 1700 4650
+Wire Wire Line
+	800  4850 800  4750
+Wire Wire Line
+	800  4750 1100 4750
+$Comp
+L power:+5V #PWR?
+U 1 1 5E69FE4E
+P 800 4550
+F 0 "#PWR?" H 800 4400 50  0001 C CNN
+F 1 "+5V" H 815 4723 50  0000 C CNN
+F 2 "" H 800 4550 50  0001 C CNN
+F 3 "" H 800 4550 50  0001 C CNN
+	1    800  4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E6A0AC7
+P 2150 4550
+F 0 "#PWR?" H 2150 4400 50  0001 C CNN
+F 1 "+3.3V" H 2165 4723 50  0000 C CNN
+F 2 "" H 2150 4550 50  0001 C CNN
+F 3 "" H 2150 4550 50  0001 C CNN
+	1    2150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4550 2150 4650
+Connection ~ 2150 4650
+Wire Wire Line
+	800  4750 800  4650
+Connection ~ 800  4750
+Wire Wire Line
+	1100 4650 800  4650
+Connection ~ 800  4650
+Wire Wire Line
+	800  4650 800  4550
+Wire Notes Line
+	500  5800 6850 5800
+Wire Notes Line
+	500  500  500  5800
+$Comp
+L Device:CP TANTALUM_C1
+U 1 1 5E6DDC8A
+P 3500 3500
+F 0 "TANTALUM_C1" H 3618 3546 50  0000 L CNN
+F 1 "100uF" H 3618 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:CAPPC3528X210N" H 3538 3350 50  0001 C CNN
+F 3 "http://datasheets.avx.com/TAJ.pdf" H 3500 3500 50  0001 C CNN
+	1    3500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3350 3500 3250
+Wire Wire Line
+	3500 3250 4800 3250
+Connection ~ 4800 3250
+Wire Wire Line
+	4800 3250 4800 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5E6F3E61
+P 3500 3750
+F 0 "#PWR?" H 3500 3500 50  0001 C CNN
+F 1 "GND" H 3505 3577 50  0000 C CNN
+F 2 "" H 3500 3750 50  0001 C CNN
+F 3 "" H 3500 3750 50  0001 C CNN
+	1    3500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3750 3500 3650
 $EndSCHEMATC
